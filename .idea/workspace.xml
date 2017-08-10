@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3064cd5f-3ed9-414d-9746-5e825329b11c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/disqus_comments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/google-analytics.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/head.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/icon-github.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/icon-github.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/icon-twitter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/icon-twitter.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/sidebar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/_sass/minima.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/_sass/minima/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/_sass/minima/_layout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/_sass/minima/_syntax-highlighting.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/bootstrap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/build" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/cibuild" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/server" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9fc8253ac21e5b4825721e4b5ba41667cd8f6974/minima.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b5fd9ae52a53752457551d279d9eaeb0d6e7a935/_base.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b5fd9ae52a53752457551d279d9eaeb0d6e7a935/_layout.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b5fd9ae52a53752457551d279d9eaeb0d6e7a935/_syntax-highlighting.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_config.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2017-07-23-welcome-to-jekyll.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/assets/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/jekyll/update/2017/07/23/welcome-to-jekyll.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/about.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.md" afterPath="" />
-    </list>
+    <list default="true" id="3064cd5f-3ed9-414d-9746-5e825329b11c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -94,7 +52,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="764" />
+    <option name="y" value="-4" />
     <option name="width" value="1295" />
     <option name="height" value="772" />
   </component>
@@ -258,23 +216,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1500831552809</updated>
-      <workItem from="1500831555057" duration="9511000" />
+      <workItem from="1500831555057" duration="9771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9511000" />
+    <option name="totallyTimeSpent" value="9771000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="764" width="1295" height="772" extended-state="6" />
+    <frame x="65" y="-4" width="1295" height="772" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17297298" sideWeight="0.48329622" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17297298" sideWeight="0.48329622" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24942085" sideWeight="0.5167038" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
