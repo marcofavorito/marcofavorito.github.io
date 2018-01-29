@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/marcofavorito
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://marcofavorito.github.io
+  * I am marcofavorito (https://keybase.io/marcofavorito) on keybase.
+  * I have a public key ASA5iHVfanM8A0vu-hD0kt7KdFK5BJpgVwzP2Er0cqpIxAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01203988755f6a733c034beefa10f492deca7452b9049a60570ccfd84af472aa48c40a",
+      "host": "keybase.io",
+      "kid": "01203988755f6a733c034beefa10f492deca7452b9049a60570ccfd84af472aa48c40a",
+      "uid": "cf99774c8c23dd279d7fcead49156619",
+      "username": "marcofavorito"
+    },
+    "merkle_root": {
+      "ctime": 1517186194,
+      "hash": "7d797e2cba810e29c951fef055c57f046e64b8415d37a61f9ca9b4e1333f56eb97a987ac7c907488f852a13556281e1c4b37509a065763fa3e2917a1db73f1e4",
+      "hash_meta": "2885147efb9168ff2f7d57ce37c932eaa6e5f6356a376581a00b2a3067e23e57",
+      "seqno": 1996999
+    },
+    "service": {
+      "hostname": "marcofavorito.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.40"
+  },
+  "ctime": 1517186257,
+  "expire_in": 504576000,
+  "prev": "9da559511baa61daba6feaf8aedcc95347af4a33b2f026e7ba6ed9d9bc46cb88",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgOYh1X2pzPANL7voQ9JLeynRSuQSaYFcMz9hK9HKqSMQKp3BheWxvYWTFA1R7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMzk4ODc1NWY2YTczM2MwMzRiZWVmYTEwZjQ5MmRlY2E3NDUyYjkwNDlhNjA1NzBjY2ZkODRhZjQ3MmFhNDhjNDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMzk4ODc1NWY2YTczM2MwMzRiZWVmYTEwZjQ5MmRlY2E3NDUyYjkwNDlhNjA1NzBjY2ZkODRhZjQ3MmFhNDhjNDBhIiwidWlkIjoiY2Y5OTc3NGM4YzIzZGQyNzlkN2ZjZWFkNDkxNTY2MTkiLCJ1c2VybmFtZSI6Im1hcmNvZmF2b3JpdG8ifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTcxODYxOTQsImhhc2giOiI3ZDc5N2UyY2JhODEwZTI5Yzk1MWZlZjA1NWM1N2YwNDZlNjRiODQxNWQzN2E2MWY5Y2E5YjRlMTMzM2Y1NmViOTdhOTg3YWM3YzkwNzQ4OGY4NTJhMTM1NTYyODFlMWM0YjM3NTA5YTA2NTc2M2ZhM2UyOTE3YTFkYjczZjFlNCIsImhhc2hfbWV0YSI6IjI4ODUxNDdlZmI5MTY4ZmYyZjdkNTdjZTM3YzkzMmVhYTZlNWY2MzU2YTM3NjU4MWEwMGIyYTMwNjdlMjNlNTciLCJzZXFubyI6MTk5Njk5OX0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJtYXJjb2Zhdm9yaXRvLmdpdGh1Yi5pbyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjQwIn0sImN0aW1lIjoxNTE3MTg2MjU3LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjlkYTU1OTUxMWJhYTYxZGFiYTZmZWFmOGFlZGNjOTUzNDdhZjRhMzNiMmYwMjZlN2JhNmVkOWQ5YmM0NmNiODgiLCJzZXFubyI6NSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEDIRxcYcIpTT22JVS+tV1H5XR7nnfEuOP4+akjH9y0LDmntGNhpNdhe+ZtJLhnE9qMo2UMeQ0r+aZEgSIdc5+QMqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg20jie24R46LuXrVJef20Ho+mGEjLZsYF5fS5JzRHK06jdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/marcofavorito
+
+==================================================================
