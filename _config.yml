@@ -22,11 +22,17 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: marcofavorit
 github_username:  MarcoFavorito
 
-# Build settings
 markdown: kramdown
 theme: minima
-plugins_dir:
-#  - jekyll-feed
+
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+
+kramdown:  
+  parse_block_html: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
