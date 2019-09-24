@@ -37,6 +37,6 @@ Keybase](https://keybase.io/marcofavorito/)
 Reddit](https://www.reddit.com/user/marcofavorito)
 
 [<img src="./assets/img/icons/pgp.png" width="24" height="24" />
-PGP key: 1B17 E963 6D21 C8BF](./public.key)
+PGP key: 1B17 E963 6D21 C8BF](./public_pgp.txt)
 
 
