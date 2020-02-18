@@ -39,4 +39,16 @@ Reddit](https://www.reddit.com/user/marcofavorito)
 [<img src="./assets/img/icons/pgp.png" width="24" height="24" />
 PGP key: 1B17 E963 6D21 C8BF](./public_pgp.txt)
 
+<div itemscope itemtype="https://schema.org/Person">
+  <a itemprop="sameAs" content="https://orcid.org/0000-0001-9566-3576" 
+     href="https://orcid.org/0000-0001-9566-3576" 
+     target="orcid.widget" 
+     rel="me noopener noreferrer" 
+     style="vertical-align:top;">
+      <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+           style="width:1em;margin-right:.5em;" 
+           alt="ORCID iD icon">
+      https://orcid.org/0000-0001-9566-3576
+  </a>
+</div>
 
