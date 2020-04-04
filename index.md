@@ -31,7 +31,7 @@ Telegram](tg://resolve?domain=marcofavorito)
 GitHub](https://github.com/marcofavorito/)
 
 [<img src="./assets/img/icons/keybase.svg" width="24" height="24" />
-Keybase](https://keybase.io/marcofavorito/)
+Keybase](https://keybase.io/marcofavorito/) ([chat](keybase://chat/marcofavorito))
 
 [<img src="./assets/img/icons/reddit.svg" width="24" height="24" />
 Reddit](https://www.reddit.com/user/marcofavorito)
