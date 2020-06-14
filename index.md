@@ -52,5 +52,3 @@ PGP key: 1B17 E963 6D21 C8BF](./public_pgp.txt)
   </a>
 </div>
 
-[Let's have a chat.](https://meet.jit.si/marcofavorito.github.io) (experimental)
-
