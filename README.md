@@ -9,9 +9,9 @@ Link: https://marcofavorito.github.io/
 
 Follow this guide to set up your [Ruby development environment](https://cloud.google.com/ruby/docs/setup#linux-instructions).
 
-Install Ruby version `2.6.0`:
+Install Ruby version `2.7.1`:
 ```
-rbenv install 2.6.0
+rbenv install 2.7.1
 ```
 
 Install `bundler`:
