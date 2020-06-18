@@ -1,8 +1,9 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: default 
+layout: page
+title: About
+permalink: /
+includelink: true
+order: 1
 ---
 
 I'm a [PhD student](https://www.dis.uniroma1.it/en/users/marco%20favorito) 
