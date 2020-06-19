@@ -48,3 +48,11 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+include:
+  - _pages
+  - _data
+
+sass:
+  sass_dir: _sass
+

@@ -1,0 +1,24 @@
+
+.site-nav {
+    float: left;
+}
+
+
+.page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+}
+
+
+.footer-icon {
+    display: inline;
+    text-align: center;
+    width: 24;
+    height: 24;
+}
+
