@@ -9,7 +9,7 @@
   icon: assets/img/icons/envelope.svg
 - name: Telegram
   data: marcofavorito
-  href: tg://resolve?domain=marcofavorito
+  href: https://t.me/marcofavorito
   icon: assets/img/icons/telegram.svg
 - name: GitHub
   data: marcofavorito
