@@ -21,7 +21,7 @@
   icon: assets/img/icons/linkedin.svg
 - name: keybase
   data: marcofavorito
-  href: keybase://chat/marcofavorito
+  href: https://keybase.io/marcofavorito/
   icon: assets/img/icons/keybase.svg
 - name: Reddit 
   data: marcofavorito
