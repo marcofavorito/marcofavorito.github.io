@@ -4,14 +4,13 @@
 
   {% for item in site.data.contacts %}
 
-  <!-- Skip OrcID -->
-  {% if item.name == 'OrcID' %}
-      {% continue %}
-  {% endif %}
+    {% if item.name == 'OrcID' %}
+        {% continue %}
+    {% endif %}
 
-    <span class="footer-icon">
-       <a href="{{ item.href }}"><img width="24" height="24" src="{{ item.icon }}"></a>
-    </span>
+      <span class="footer-icon">
+         <a href="{{ item.href }}"><img width="24" height="24" src="{{ item.icon }}"></a>
+      </span>
   {% endfor %} 
 
 <div style="display: inline; text-align: center"
@@ -26,6 +25,6 @@
            alt="ORCID iD icon"></a></div>
       <!-- https://orcid.org/0000-0001-9566-3576 -->
 
-  </div>
+</div>
 
 </footer>
