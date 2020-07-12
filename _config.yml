@@ -30,6 +30,7 @@ theme: minima
 
 plugins:
   - jekyll-relative-links
+  - jekyll-redirect-from
 relative_links:
   enabled: true
   collections: true

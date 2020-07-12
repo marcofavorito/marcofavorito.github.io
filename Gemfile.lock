@@ -31,6 +31,8 @@ GEM
       terminal-table (~> 1.8)
     jekyll-feed (0.13.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-redirect-from (0.16.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-relative-links (0.6.1)
       jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (2.1.0)
@@ -73,6 +75,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (>= 3.6.3)
   jekyll-feed (~> 0.6)
+  jekyll-redirect-from (~> 0.16.0)
   jekyll-relative-links
   minima (~> 2.0)
   tzinfo-data
