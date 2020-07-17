@@ -30,5 +30,6 @@
 #
 2020-07-06T21:26:16+02:00	my first tweet :-)
 2020-07-07T23:59:29+02:00	Goodbye, Ennio Morricone. https://www.youtube.com/watch?v=oQHkTCq5e8c
-2020-07-11T12:28:16+02:00	The Future of Mathematics: https://www.youtube.com/watch\?v\=Dp-mQ3HxgDE
-2020-07-15T00:12:52+02:00	The QED Manifesto: https://www.cs.ru.nl/\~freek/qed/qed.html
+2020-07-11T12:28:16+02:00	The Future of Mathematics: https://www.youtube.com/watch?v=Dp-mQ3HxgDE
+2020-07-15T00:12:52+02:00	The QED Manifesto: https://www.cs.ru.nl/~freek/qed/qed.html
+2020-07-17T10:01:05+02:00	The GitHub Arctic Code Valut: https://archiveprogram.github.com/
