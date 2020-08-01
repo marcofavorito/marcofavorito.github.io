@@ -34,3 +34,4 @@
 2020-07-15T00:12:52+02:00	The QED Manifesto: https://www.cs.ru.nl/~freek/qed/qed.html
 2020-07-17T10:01:05+02:00	The GitHub Arctic Code Valut: https://archiveprogram.github.com/
 2020-07-22T20:32:29+02:00	The IMO Grand Challenge: https://imo-grand-challenge.github.io/
+2020-08-01T11:00:10+02:00	If you choose an answer to this question at random, what is the probability that you will be correct? A) 25% B) 50% C) 0% D) 25%
