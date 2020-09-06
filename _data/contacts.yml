@@ -2,53 +2,53 @@
 - name: Personal email
   data: marco.favorito@gmail.com
   href: mailto:marco.favorito@gmail.com
-  icon: assets/img/icons/envelope.svg
+  icon: /assets/img/icons/envelope.svg
 - name: Academic email
   data: favorito@diag.uniroma1.it
   href: mailto:favorito@diag.uniroma1.it
-  icon: assets/img/icons/envelope.svg
+  icon: /assets/img/icons/envelope.svg
 - name: Telegram
   data: marcofavorito
   href: https://t.me/marcofavorito
-  icon: assets/img/icons/telegram.svg
+  icon: /assets/img/icons/telegram.svg
 - name: GitHub
   data: marcofavorito
   href: https://github.com/marcofavorito
-  icon: assets/img/icons/github.svg
+  icon: /assets/img/icons/github.svg
 - name: LinkedIn
   data: marcofavorito
   href: https://www.linkedin.com/in/marcofavorito/
-  icon: assets/img/icons/linkedin.svg
+  icon: /assets/img/icons/linkedin.svg
 - name: keybase
   data: marcofavorito
   href: https://keybase.io/marcofavorito/
-  icon: assets/img/icons/keybase.svg
+  icon: /assets/img/icons/keybase.svg
 - name: Reddit 
   data: marcofavorito
   href: https://www.reddit.com/user/marcofavorito
-  icon: assets/img/icons/reddit.svg
+  icon: /assets/img/icons/reddit.svg
 - name: Public PGP 
   data: marco.favorito@gmail.com 
-  href: assets/public_pgp.txt
-  icon: assets/img/icons/pgp.png
+  href: /assets/public_pgp.txt
+  icon: /assets/img/icons/pgp.png
 - name: Google Scholar
   data: tJhhDGEAAAAJ
   href: https://scholar.google.it/citations?user=tJhhDGEAAAAJ
-  icon: assets/img/icons/scholar.png
+  icon: /assets/img/icons/scholar.png
 - name: DBLP
   data: Favorito:Marco 
   href: https://dblp.uni-trier.de/pers/hd/f/Favorito:Marco
-  icon: assets/img/icons/dblp.png
+  icon: /assets/img/icons/dblp.png
 - name: Bitcoin address
   data: BC1QSNTNEWWS350D6GT25WC4SXNZFEY55WSE7V0RGJ 
   href: bitcoin:BC1QSNTNEWWS350D6GT25WC4SXNZFEY55WSE7V0RGJ
-  icon: assets/img/icons/bitcoin.png
+  icon: /assets/img/icons/bitcoin.png
 - name: Zcash address
   data: ""
   href: ""
-  icon: assets/img/icons/zcash.png
+  icon: /assets/img/icons/zcash.png
 - name: OrcID
   data: 0000-0001-9566-3576
   href: https://orcid.org/0000-0001-9566-3576
-  icon: assets/img/icons/orcid_bw.png
+  icon: /assets/img/icons/orcid_bw.png
 

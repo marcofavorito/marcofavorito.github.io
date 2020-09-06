@@ -5,5 +5,5 @@
 layout: default 
 ---
 
-{% include about.md %}
+{% include home.html %}
 
