@@ -17,10 +17,43 @@ title: Marco Favorito
 email: marco.favorito@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Marco Favorito personal web page.
+author: Marco Favorito
+tagline: Personal web page
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "marcofavorito.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: marcofavorit
 github_username:  marcofavorito
+
+####################
+# jekyll-seo
+twitter:
+  username: marcofavorit 
+  card: summary
+#facebook:
+#  app_id: 1234
+#  publisher: 1234
+#  admins: 1234
+logo: favicon.ico
+social:
+  name: Marco Favorito
+  links:
+    - https://twitter.com/marcofavorit
+    #- https://www.facebook.com/marco.favorito.9
+    - https://www.linkedin.com/in/marcofavorito/
+    - https://github.com/marcofavorito
+    - https://keybase.io/marcofavorito
+    - https://scholar.google.it/citations?user=tJhhDGEAAAAJ&hl=en
+    - https://dblp.uni-trier.de/pers/hd/f/Favorito:Marco
+    - https://orcid.org/0000-0001-9566-3576
+google-site-verification: 9LTy48XievirBumuyPw4uYkfBtd2hhzLwu0tTp3Kp3Y
+lang: en_US
+####################
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: favicon.ico
 
 # Google services
 google_analytics: UA-162936928-1
@@ -31,6 +64,7 @@ theme: minima
 plugins:
   - jekyll-relative-links
   - jekyll-redirect-from
+  - jekyll-sitemap
 relative_links:
   enabled: true
   collections: true

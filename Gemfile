@@ -28,3 +28,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jekyll-relative-links'
 
 gem "jekyll-redirect-from", "~> 0.16.0"
+
+gem "jekyll-seo-tag", "~> 2.6"
+
+gem "jekyll-sitemap", "~> 1.4"
