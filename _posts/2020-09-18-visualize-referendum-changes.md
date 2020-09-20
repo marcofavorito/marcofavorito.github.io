@@ -56,7 +56,7 @@ with the changes proposed by the proposed reform (ID `19A06354`).
 The changes are taken from the [official source "Gazzetta Ufficiale"](https://www.gazzettaufficiale.it/eli/id/2019/10/12/19A06354/sg).
 
 <p align="center">
-  <a href="https://github.com/marcofavorito/costituzione-della-repubblica-italiana/pulls/1">
+  <a href="https://github.com/marcofavorito/costituzione-della-repubblica-italiana/pull/1">
     <img alt="Changes introduced by the 2020's constitutional reform." src="/assets/posts/visualize-referendum-changes/changes.png">
   </a>
 </p>
