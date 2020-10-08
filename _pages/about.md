@@ -1,9 +1,9 @@
 ---
 layout: default 
 title: About
-permalink: /about
+permalink: /
 redirect_from:
-  - /
+  - /about
 includelink: true
 order: 1
 ---
