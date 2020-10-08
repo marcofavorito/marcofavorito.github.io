@@ -34,7 +34,7 @@
 - name: Google Scholar
   data: tJhhDGEAAAAJ
   href: https://scholar.google.it/citations?user=tJhhDGEAAAAJ
-  icon: /assets/img/icons/scholar.png
+  icon: /assets/img/icons/scholar.svg
 - name: DBLP
   data: Favorito:Marco 
   href: https://dblp.uni-trier.de/pers/hd/f/Favorito:Marco

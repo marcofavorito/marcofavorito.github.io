@@ -1,10 +1,13 @@
 ---
-layout: post
+layout: post_page
 comments: true
 title:  "Visualize the changes of the Constitutional Referendum with Git/GitHub"
 description: "A Proof-of-Concept to visualize the changes to the text of the constitution introduced by the incoming constitutional referendum using Git and GitHub."
 image: /assets/posts/visualize-referendumchanges/referendum.jpeg
 date:   2020-09-18 16:00:00 UTC
+authors:
+  - name: Marco Favorito
+    url: https://marcofavorito.github.io
 identifier: visualize-referendum-changes
 permalink: blog/visualize-referendum-changes
 canonical_url: 'https://marcofavorito.github.io/blog/visualize-referendum-changes'

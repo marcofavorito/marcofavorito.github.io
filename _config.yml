@@ -65,12 +65,23 @@ plugins:
   - jekyll-relative-links
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll/scholar
+  - jemoji
 relative_links:
   enabled: true
   collections: true
 
 kramdown:  
   parse_block_html: true
+
+
+scholar:
+  style: modern-language-association
+
+
+# enable features
+enable_math: true
+enable_google_analytics: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
