@@ -69,7 +69,15 @@
 
       <d-article class="l-body">
         {{ content }}
+      
+      <hr>
+      <!-- disqus comments -->
+      {% if page.comments %}
+        {% include scripts/disqus.html %}
+      {% endif %}
+
       </d-article>
+
 
       <d-appendix>
         <d-footnote-list></d-footnote-list>
