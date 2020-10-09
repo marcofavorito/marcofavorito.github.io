@@ -36,3 +36,5 @@ gem "jekyll-sitemap", "~> 1.4"
 gem "jemoji"
 
 gem "jekyll-scholar"
+
+gem "jekyll-figure"
