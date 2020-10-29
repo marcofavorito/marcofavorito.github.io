@@ -37,3 +37,4 @@
 2020-09-21T23:26:17+02:00	"If you think you understand quantum mechanics, you don't understand quantum mechanics."
 2020-10-12T18:02:45+02:00	Rubber Duck Debugging: https://rubberduckdebugging.com/
 2020-10-29T10:53:42+01:00	When We All Fall Asleep, Where Do We Go?
+2020-10-29T18:35:10+01:00	'All the history of science is a history of compression.'. Jürgen Schmidhuber
