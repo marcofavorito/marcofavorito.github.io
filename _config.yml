@@ -57,6 +57,7 @@ defaults:
 
 # Google services
 google_analytics: UA-162936928-1
+google_analytics_measurements: G-VLMZ2VWC3N
 
 markdown: kramdown
 theme: minima
