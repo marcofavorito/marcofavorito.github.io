@@ -38,3 +38,4 @@
 2020-10-12T18:02:45+02:00	Rubber Duck Debugging: https://rubberduckdebugging.com/
 2020-10-29T10:53:42+01:00	When We All Fall Asleep, Where Do We Go?
 2020-10-29T18:35:10+01:00	'All the history of science is a history of compression.'. Jürgen Schmidhuber
+2020-11-22T10:30:10+01:00	It's your interpretation - Vladimir Vapnik. https://www.youtube.com/watch?v=STFcvzoxVw4&feature=youtu.be&t=1379
