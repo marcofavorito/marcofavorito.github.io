@@ -10,7 +10,7 @@ encrypt or verify a message to/from me.
 
 - Import the public key
 ```
-curl https://marcofavorito.github.io/assets/public_pgp.txt | gpg --import
+curl https://marcofavorito.me/assets/public_pgp.txt | gpg --import
 # or
 # curl https://keybase.io/marcofavorito/pgp_keys.asc | gpg --import
 ```

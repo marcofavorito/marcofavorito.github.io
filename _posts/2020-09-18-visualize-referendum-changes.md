@@ -7,10 +7,10 @@ image: /assets/posts/visualize-referendum-changes/referendum.jpeg
 date:   2020-09-18 16:00:00 UTC
 authors:
   - name: Marco Favorito
-    url: https://marcofavorito.github.io
+    url: https://marcofavorito.me
 identifier: visualize-referendum-changes
 permalink: blog/visualize-referendum-changes
-canonical_url: 'https://marcofavorito.github.io/blog/visualize-referendum-changes'
+canonical_url: 'https://marcofavorito.me/blog/visualize-referendum-changes'
 ---
 
 

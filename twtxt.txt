@@ -16,11 +16,11 @@
 # --------------------------------
 #
 #    nick : marcofavorito 
-#     url : https://marcofavorito.github.io/twtxt.txt
+#     url : https://marcofavorito.me/twtxt.txt
 #    lang : en
 #     geo : Earth->ITA->Rome
 #   email : marco.favorito@gmail.com 
-#     web : https://marcofavorito.github.io/
+#     web : https://marcofavorito.me/
 #  github : https://github.com/marcofavorito/
 #
 #

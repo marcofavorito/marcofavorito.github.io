@@ -7,11 +7,11 @@ image: /assets/posts/learning-pdfas/probabilistic-automaton.jpg
 date:   2020-10-08 22:00:00 UTC
 authors:
   - name: Marco Favorito
-    url: https://marcofavorito.github.io
+    url: https://marcofavorito.me
 bibliography: learning-pdfas.bib
 identifier: learning-pdfas
 permalink: blog/learning-pdfas
-canonical_url: 'https://marcofavorito.github.io/blog/learning-pdfas'
+canonical_url: 'https://marcofavorito.me/blog/learning-pdfas'
 ---
 
 These days I've been working on a problem that required the learning

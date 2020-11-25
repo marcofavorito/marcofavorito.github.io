@@ -1,8 +1,8 @@
-# marcofavorito.github.io
+# marcofavorito.me
 
 My personal webpage.
 
-Link: https://marcofavorito.github.io/
+Link: https://marcofavorito.me/
 
 
 ## Preliminaries
