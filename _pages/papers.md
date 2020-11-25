@@ -1,11 +1,9 @@
 ---
 layout: default 
-title: Papers
+title: Publications
 permalink: /papers
 includelink: true
-order: -1
+order: 3
 ---
-
-# Papers
 
 {% bibliography --file bibliography.bib %}
