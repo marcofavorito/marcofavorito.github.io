@@ -78,7 +78,11 @@ kramdown:
 
 
 scholar:
-  style: modern-language-association
+  style: apa
+  source: assets/bibliography
+  group_by: year
+  group_order: descending
+  bibliography_template: <a href="{{entry.year}}/{{key}}.pdf">{{reference}}</a>
 
 
 # enable features
