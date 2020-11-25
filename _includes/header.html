@@ -21,7 +21,7 @@
 
         <div class="trigger">
             {% for item in site.data.navigation %}
-            <a class="page-link" href="{{ item.link | relative_url }}">{{ item.name | escape }}</a>
+            <a class="page-link {% if item.name == page.title %} nav-highlighted {% endif %}" href="{{ item.link | relative_url }}">{{ item.name | escape }}</a>
             {% endfor %}
         </div>
       </nav>

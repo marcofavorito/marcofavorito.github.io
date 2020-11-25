@@ -1,13 +1,10 @@
 <footer class="site-footer">
 
   <div class="wrapper">
-
   {% for item in site.data.contacts %}
-
     {% if item.name == 'OrcID' %}
         {% continue %}
     {% endif %}
-
       <span class="footer-icon">
          <a href="{{ item.href }}"><img width="24" height="24" src="{{ item.icon }}"></a>
       </span>
