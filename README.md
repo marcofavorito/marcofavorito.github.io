@@ -40,3 +40,7 @@ To serve:
 bundle exec jekyll serve
 ```
 
+To publish on GitHub, from the `source` branch:
+```
+rake publish
+```
