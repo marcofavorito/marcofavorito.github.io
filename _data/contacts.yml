@@ -27,6 +27,10 @@
   data: marcofavorito
   href: https://www.reddit.com/user/marcofavorito
   icon: /assets/img/icons/reddit.svg
+- name: HackerNews 
+  data: marcofavorito
+  href: https://news.ycombinator.com/user?id=marcofavorito
+  icon: /assets/img/icons/hn.png
 - name: Public PGP 
   data: marco.favorito@gmail.com 
   href: /assets/public_pgp.txt
