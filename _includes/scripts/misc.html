@@ -7,7 +7,9 @@
   gtag('js', new Date());
 
   gtag('config', '{{ site.google_analytics }}');
-  gtag('config', '{{ site.google_analytics_measurements }}');
+  {% for ga_measurement in site.google_analytics_measurements %}
+  gtag('config', '{{ ga_measurement }}');
+  {% endfor %}
   gtag('set', 'anonymizeIp', true);
   gtag('send', 'pageview');
 </script>

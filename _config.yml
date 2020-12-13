@@ -57,7 +57,9 @@ defaults:
 
 # Google services
 google_analytics: UA-162936928-1
-google_analytics_measurements: G-VLMZ2VWC3N
+google_analytics_measurements:
+- 'G-VLMZ2VWC3N'
+- 'G-DDYB9GX4XD'
 
 markdown: kramdown
 theme: minima
@@ -82,7 +84,7 @@ scholar:
   source: assets/bibliography
   group_by: year
   group_order: descending
-  bibliography_template: <a href="./papers/{{entry.year}}/{{key}}.pdf">{{reference}}</a>
+  bibliography_template: <a href="/papers/{{entry.year}}/{{key}}.pdf">{{reference}}</a>
 
 
 # enable features
