@@ -6,7 +6,7 @@ require "jekyll"
 
 
 # Change your GitHub reponame
-GITHUB_REPONAME = "marcofavorito/marcofavorito.me"
+GITHUB_REPONAME = "marcofavorito/marcofavorito.github.io"
 
 
 desc "Generate blog files"
@@ -27,11 +27,12 @@ task :publish => [:generate] do
     Dir.chdir tmp
 
     system "git init"
+    system "git checkout -b gh-pages"
     system "git add ."
     message = "Site updated at #{Time.now.utc}"
     system "git commit -m #{message.inspect}"
     system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
-    system "git push origin master --force"
+    system "git push origin gh-pages --force"
 
     Dir.chdir pwd
   end
