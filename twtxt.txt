@@ -41,3 +41,4 @@
 2020-11-22T10:30:10+01:00	It's your interpretation - Vladimir Vapnik. https://www.youtube.com/watch?v=STFcvzoxVw4&feature=youtu.be&t=1379
 2020-12-05T19:07:57+01:00	∃y.∀x.(x=y+1)⇒ ∀w∀z(w=z)
 2021-01-24T16:12:36+01:00	1337
+2021-02-04T19:39:26+01:00	[out = std::ref(std::cout << "Hello ")](){ out.get() << "World!\n"; }();
