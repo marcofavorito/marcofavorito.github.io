@@ -55,4 +55,8 @@
   data: 0000-0001-9566-3576
   href: https://orcid.org/0000-0001-9566-3576
   icon: /assets/img/icons/orcid_bw.png
+- name: ResearchGate 
+  data: Marco-Favorito
+  href: https://www.researchgate.net/profile/Marco-Favorito
+  icon: /assets/img/icons/researchgate.png
 
