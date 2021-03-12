@@ -38,3 +38,5 @@ gem "jemoji"
 gem "jekyll-scholar"
 
 gem "jekyll-figure"
+
+gem "jekyll-regex-replace", "~> 1.1"

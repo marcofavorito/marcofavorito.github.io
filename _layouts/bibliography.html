@@ -1,0 +1,73 @@
+---
+---
+{%- comment -%}
+This initial part is used to display coloured blocks, citation count,
+and to embed everything in a <div> that javascript can then show and
+hide on demand.
+{%- endcomment -%}
+
+{%- if entry.type == "book" -%}
+<div class="book">
+<img alt="book" src="/assets/img/book-box.png"/> [b<span class="b-counter"></span>] 
+{%- elsif entry.type == "incollection" -%}
+<div class="incollection">
+<img alt="chapter" src="/assets/img/incollection-box.png"/> [p<span class="p-counter"></span>] 
+{%- elsif entry.type == "article" -%}
+<div class="article">
+<img alt="journal" src="/assets/img/article-box.png"/> [j<span class="j-counter"></span>] 
+{%- elsif entry.type == "inproceedings" -%}
+<div class="inproceedings">
+<img alt="conference" src="/assets/img/inproceedings-box.png"/> [c<span class="c-counter"></span>]
+{%- elsif entry.type == "phdthesis" -%}
+<div class="thesis">
+<strong>[PhD Thesis]</strong>
+{%- elsif entry.type == "bathesis" -%}
+<div class="thesis">
+<strong>[BSc Thesis]</strong>
+{%- elsif entry.type == "mathesis" -%}
+<div class="thesis">
+<strong>[MSc Thesis]</strong>
+{%- else -%}
+<div class="other">
+<img alt="other" src="/assets/img/informal-box.png"/> [i<span class="i-counter"></span>] 
+{%- endif -%}
+
+{%- comment -%}
+The actual reference. This uses a custom CSL specified in _config.yml.
+The CSL is basically IEEE style, without citation number in []
+{%- endcomment %}
+{{ reference }}
+
+{%- comment -%}
+This is my custom stuff: articles that I insert might not be appeared yet,
+plus I add the links to the bibtex (javascript-shown) and to pdf, when
+available in the archive. I additionally show information related to
+best paper awards.
+{%- endcomment -%}
+
+
+
+{%- if entry.note and entry.note == "To appear" %} (<em>To appear</em>) {% endif -%}
+
+<!-- {%- if links.pdf %} [<a href="/{{ links.pdf }}">PDF</a>] {%- endif %} -->
+[<a href="/papers/{{ entry.year }}/{{ entry.key }}.pdf">PDF</a>]
+
+[<a href="javascript:bibtex('{{ entry.key }}bib')">Bibtex</a>]
+
+{%- if entry.abstract %}
+[<a href="{% details_link key %}">Abstract</a>]
+{%- endif -%}
+
+<div class="dialog" id="{{ entry.key }}bib" title="BibTeX" style="display:none" >
+  <pre>{{ entry.bibtex }}</pre>
+</div>
+
+{%- if entry.type == "phdthesis" or entry.type == "bathesis" or entry.type == "mathesis" -%}
+<br/>{{ entry.comment }}
+{%- endif -%}
+
+{%- comment -%}
+This closes the <div> used by javascript to hide entries on demand
+{%- endcomment -%}
+
+</div>

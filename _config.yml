@@ -55,6 +55,20 @@ defaults:
     values:
       image: favicon.ico
 
+############
+jquery:
+  version: 3.5.1
+  integrity: sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2
+jqueryui:
+  version: 1.12.1
+popper:
+  version: 1.16.1
+  integrity: sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN
+bootstrap:
+  version: 4.6.0
+  integrity: sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF 
+############
+
 # Google services
 google_analytics: UA-162936928-1
 google_analytics_measurements:
@@ -70,6 +84,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-figure
   - jekyll/scholar
+  - jekyll-regex-replace
   - jemoji
 relative_links:
   enabled: true
@@ -80,11 +95,21 @@ kramdown:
 
 
 scholar:
-  style: apa
+  style: _layouts/custom.csl
   source: assets/bibliography
+  bibliography: bibliography.bib
+  sort_by: year,month
+  order: descending
   group_by: year
   group_order: descending
-  bibliography_template: <a href="/papers/{{entry.year}}/{{key}}.pdf">{{reference}}</a>
+  details_dir: papers
+  details_layout: bibpage.html
+  details_link: DetailsToRemove
+  repository: papers
+  bibliography_template: bibliography
+  bibliography_list_tag: div
+  bibliography_item_tag: div
+  #bibliography_template: <a href="/papers/{{entry.year}}/{{key}}.pdf">{{reference}}</a>
 
 
 # enable features
@@ -102,6 +127,8 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - README.md
+  - Rakefile
 
 include:
   - _pages
