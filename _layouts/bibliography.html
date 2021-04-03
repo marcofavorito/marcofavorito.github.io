@@ -50,9 +50,13 @@ best paper awards.
 {%- if entry.note and entry.note == "To appear" %} (<em>To appear</em>) {% endif -%}
 
 <!-- {%- if links.pdf %} [<a href="/{{ links.pdf }}">PDF</a>] {%- endif %} -->
+[<a href="javascript:bibtex('{{ entry.key }}bib')">Bibtex</a>]
+
 [<a href="/papers/{{ entry.year }}/{{ entry.key }}.pdf">PDF</a>]
 
-[<a href="javascript:bibtex('{{ entry.key }}bib')">Bibtex</a>]
+{%- if entry.ipfs %}
+[<a href="{{ entry.ipfs }}">IPFS</a>]
+{%- endif -%}
 
 {%- if entry.abstract %}
 [<a href="{% details_link key %}">Abstract</a>]
