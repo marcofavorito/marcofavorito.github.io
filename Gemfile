@@ -19,24 +19,16 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-feed", "~> 0.6"
+   gem 'jekyll-relative-links'
+   gem "jekyll-redirect-from", "~> 0.16.0"
+   gem "jekyll-seo-tag", "~> 2.6"
+   gem "jekyll-sitemap", "~> 1.4"
+   gem "jemoji"
+   gem "jekyll-scholar"
+   gem "jekyll-figure"
+   gem "jekyll-regex-replace", "~> 1.1"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'jekyll-relative-links'
-
-gem "jekyll-redirect-from", "~> 0.16.0"
-
-gem "jekyll-seo-tag", "~> 2.6"
-
-gem "jekyll-sitemap", "~> 1.4"
-
-gem "jemoji"
-
-gem "jekyll-scholar"
-
-gem "jekyll-figure"
-
-gem "jekyll-regex-replace", "~> 1.1"

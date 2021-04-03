@@ -129,10 +129,10 @@ exclude:
   - vendor/ruby/
   - README.md
   - Rakefile
+  - ignore/
 
 include:
   - _pages
-  - _posts
   - _data
 
 sass:
