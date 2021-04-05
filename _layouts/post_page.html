@@ -16,6 +16,7 @@
     <script async type="text/json">{
       "title": "{{ page.title }}",
       "description": "{{ page.description }}",
+
       "published": "{{ page.date | date: "%Y-%m-%d" }}",
       "authors": [
         {% for author in page.authors %}
@@ -47,6 +48,13 @@
           }
         ]
       }
+      {% if page.nft_url %},
+      "nftUrl": "{{ page.nft_url }}"
+      {%  endif %}
+      {% if page.has_pdf %},
+      "hasPdf": true
+      {%  endif %}
+
     }</script>
   </d-front-matter>
 
@@ -84,7 +92,7 @@
         <d-citation-list></d-citation-list>
       </d-appendix>
 
-      <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}">
+      <d-bibliography src="./{{ page.bibliography }}">
       </d-bibliography>
     </div>
   </main>

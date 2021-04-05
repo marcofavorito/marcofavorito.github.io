@@ -3,14 +3,13 @@ layout: post_page
 comments: true
 title:  "Learning Probabilistic Deterministic Automata"
 description: "Implementation of the (Palmer & Goldberg, 2005) PAC algorithm."
-image: /assets/posts/learning-pdfas/probabilistic-automaton.jpg
+image: ./probabilistic-automaton.jpg
 date:   2020-10-08 22:00:00 UTC
 authors:
   - name: Marco Favorito
     url: https://marcofavorito.me
 bibliography: learning-pdfas.bib
 identifier: learning-pdfas
-permalink: blog/learning-pdfas
 canonical_url: 'https://marcofavorito.me/blog/learning-pdfas'
 ---
 
@@ -55,7 +54,7 @@ $D_{\mathcal{A}}(s) = \gamma(q_0,s)$ for $s$ such that $\tau(q_0,s) = q_f$.
 </p>
 
 Moreover, we define the _variation distance_ $L_1$ between two distributions
-$D_1$ and $D_2$ over $\Sigma^\*$ as 
+$D_1$ and $D_2$ over $\Sigma^*$ as 
 $L_1(D_1, D_2) = \sum_{s\in\Sigma^*} | D_1(s) - D_2(s) |$.
 
 Later, it will be useful the following definition of $L_{\infty}$-norm between two distributions $D$, $D^\prime$:
@@ -64,9 +63,7 @@ Later, it will be useful the following definition of $L_{\infty}$-norm between t
 $L_{\infty}(D, D^\prime) = \max_{s\in\Sigma^*} |D(s) - D^\prime(s)|$
 </p>
 
-| ![](/assets/posts/learning-pdfas/simple-pdfa-example.jpeg) | 
-|:--:| 
-| A Simple PDFA with $\zeta,\zeta^\prime\in [0, 1]$ |
+![A Simple PDFA with $\zeta,\zeta^\prime\in [0, 1]$ ](simple-pdfa-example.jpeg) 
 
 ## PDFAs in Python
 
@@ -263,9 +260,7 @@ to_graphviz(automaton).render("path-to-file")
 
 That results in:
 
-<p style="text-align: center;">
-  <img src="/assets/posts/learning-pdfas/rendered-automaton.svg" /> 
-</p>
+![Result.](./rendered-automaton.svg)
 
 ## Learning a PDFA
 
@@ -310,11 +305,11 @@ It is composed in two parts:
 
 Here the pseudocode of both algorithms: 
 
-| ![](/assets/posts/learning-pdfas/algorithm-1.png) | 
+| ![](algorithm-1.png) | 
 |:--:| 
 | Find a subgraph $H$ of $\mathcal{A}$ |
 
-| ![](/assets/posts/learning-pdfas/algorithm-2.png) | 
+| ![](algorithm-2.png) | 
 |:--:| 
 | Find the probabilities $\gamma(q,\sigma)$ forall $q,\sigma$ |
 
@@ -437,3 +432,6 @@ This library provides a simple (Python) implementation of Probabilistic Determin
 and a PAC-learning algorithm <d-cite key="palmer2005"></d-cite>.
 As future work,  the other algorithms could be implemented, e.g. the one for the acyclic PDFAs <d-cite key="ron1998"></d-cite> 
 and the one using the KL divergence as error metric <d-cite key="clark2004"></d-cite>.
+
+## References
+

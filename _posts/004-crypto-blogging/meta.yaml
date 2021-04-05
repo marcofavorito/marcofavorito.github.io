@@ -1,0 +1,32 @@
+---
+template: 'template.tex'
+documentclass: article
+#classoption: sigconf
+toc: true
+title:  Crypto-Blogging
+subtitle: OpenTimestamps, IPFS, and NFTs for the blockchain era of blogging.
+abstract: ""
+date: 2021-04-05
+author:
+- name: Marco Favorito
+  affiliation: Sapienza University of Rome
+  #location: Department of Computer, Control and Management Engineering
+  #address: Via Ariosto, 25, 00185 Roma RM, Italy
+  email: favorito@diag.uniroma1.it
+  site: https://marcofavorito.me
+keywords: OpenTimestamps, blogging, IPFS, NFTs, blockchain
+#bibliography: biblio.bib
+biblio-title: "References"
+link: https://marcofavorito.me/blog/crypto-blogging
+biblatex: true
+
+include-before: |
+  ```{=latex}
+  ```
+figPrefix:
+  - "Fig."
+  - "Figs."
+secPrefix:
+  - "Section"
+  - "Sections"
+...

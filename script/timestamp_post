@@ -1,0 +1,29 @@
+#!/bin/sh
+
+set -e
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: timestamp_post BLOGPOST_ID"
+    exit 1
+fi
+
+blogpost_identifier="$1"
+posts_dir='_posts'
+blogpost_dir=`ls "$posts_dir" | grep ${blogpost_identifier}`
+markdown_path=$(find $posts_dir/$blogpost_dir -iname "*.md" | grep ${blogpost_identifier})
+temp_markdown_path="$markdown_path.temp"
+bibliography_path="${posts_dir}/${blogpost_dir}/${blogpost_identifier}.bib"
+meta_file="$posts_dir/$blogpost_dir/meta.yaml"
+latex_output_file="$posts_dir/$blogpost_dir/${blogpost_identifier}.tex"
+pdf_output_file="$posts_dir/$blogpost_dir/${blogpost_identifier}.pdf"
+cat $markdown_path | python script/_from_distillpub_to_pandoc.py > $temp_markdown_path
+pandoc -N -s --resource-path "$post_dir" --bibliography=${bibliography_path}\
+  "${meta_file}" \
+  --top-level-division=chapter \
+  --template=_layouts/template.tex "${temp_markdown_path}"\
+  --filter=pandoc-citeproc \
+  -f markdown -t latex+raw_tex+tex_math_dollars+citations -o ${pdf_output_file}
+echo "Timestamping"
+pipenv run ots stamp ${pdf_output_file}
+rm $temp_markdown_path
+

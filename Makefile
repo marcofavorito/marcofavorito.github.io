@@ -9,6 +9,6 @@ build:
 	$(BIN) build
 
 serve:
-	$(BIN) serve
+	$(BIN) serve 
 
 .PHONY: clean

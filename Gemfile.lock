@@ -53,6 +53,8 @@ GEM
     jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-figure (0.1.0)
+    jekyll-postfiles (3.1.0)
+      jekyll (>= 3.8.6, < 5)
     jekyll-redirect-from (0.16.0)
       jekyll (>= 3.3, < 5.0)
     jekyll-regex-replace (1.1.0)
@@ -102,7 +104,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rexml (3.2.4)
+    rexml (3.2.5)
     rouge (3.26.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
@@ -120,6 +122,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (>= 3.6.3)
   jekyll-figure
+  jekyll-postfiles (~> 3.1)
   jekyll-redirect-from (~> 0.16.0)
   jekyll-regex-replace (~> 1.1)
   jekyll-relative-links

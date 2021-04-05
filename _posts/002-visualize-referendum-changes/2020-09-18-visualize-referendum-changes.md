@@ -3,13 +3,12 @@ layout: post_page
 comments: true
 title:  "Visualize the changes of the Constitutional Referendum with Git/GitHub"
 description: "A Proof-of-Concept to visualize the changes to the text of the constitution introduced by the incoming constitutional referendum using Git and GitHub."
-image: /assets/posts/visualize-referendum-changes/referendum.jpeg
+image: ./referendum.jpeg
 date:   2020-09-18 16:00:00 UTC
 authors:
   - name: Marco Favorito
     url: https://marcofavorito.me
 identifier: visualize-referendum-changes
-permalink: blog/visualize-referendum-changes
 canonical_url: 'https://marcofavorito.me/blog/visualize-referendum-changes'
 ---
 
@@ -23,7 +22,7 @@ for the Senate from 315 to 200.
 
 <p align="center">
   <a href="https://en.wikipedia.org/wiki/2020_Italian_constitutional_referendum">
-    <img alt="Referendum." src="/assets/posts/visualize-referendum-changes/referendum.jpeg">
+    <img alt="Referendum." src="./referendum.jpeg">
   </a>
 </p>
  
@@ -60,7 +59,7 @@ The changes are taken from the [official source "Gazzetta Ufficiale"](https://ww
 
 <p align="center">
   <a href="https://github.com/marcofavorito/costituzione-della-repubblica-italiana/pull/1">
-    <img alt="Changes introduced by the 2020's constitutional reform." src="/assets/posts/visualize-referendum-changes/changes.png">
+    <img alt="Changes introduced by the 2020's constitutional reform." src="changes.png">
   </a>
 </p>
 

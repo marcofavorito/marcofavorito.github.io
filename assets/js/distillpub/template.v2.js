@@ -104,6 +104,9 @@
     if (source.doi) {
       target.doi = source.doi;
     }
+
+    target.nftUrl = source.nftUrl;
+    target.hasPdf = source.hasPdf;
   }
 
   class FrontMatter {
@@ -170,6 +173,9 @@
       //  doi: '10.23915/distill.00001',
       this.doi = undefined;
       this.publishedDate = undefined;
+
+      this.nftUrl = undefined;
+      this.hasPdf = false;
     }
 
     // Example:
@@ -2083,10 +2089,8 @@ d-appendix > distill-appendix {
   function bylineTemplate(frontMatter) {
     return `
   <div class="byline grid">
-    <div class="authors-affiliations grid">
-      <h3>Authors</h3>
-      <h3></h3>
-      <!--<h3>Affiliations</h3>-->
+	<div>
+    <h3>Authors</h3>
       ${frontMatter.authors.map(author => `
         <p class="author">
           ${author.personalURL ? `
@@ -2101,13 +2105,23 @@ d-appendix > distill-appendix {
         </p>
         -->
       `).join('')}
-    </div>
-    <div>
+      </div>
+    <div class="col">
       <h3>Published</h3>
       ${frontMatter.publishedDate ? `
         <p>${frontMatter.publishedMonth} ${frontMatter.publishedDay}, ${frontMatter.publishedYear}</p> ` : `
         <p><em>Not published yet.</em></p>`}
     </div>
+	<div>
+	</div>
+    ${frontMatter.hasPdf ? `
+    <div class="col">
+      <h3>Formats</h3>
+        <p><a href="${window.location.pathname.slice(0, -1)}/${window.location.pathname.split('/').slice(-2)[0]}.pdf">PDF</a>
+           <a href="${window.location.pathname.slice(0, -1)}/${window.location.pathname.split('/').slice(-2)[0]}.pdf.ots">(timestamp)</a></p> 
+        ${frontMatter.nftUrl ?`
+        <p><a href="${frontMatter.nftUrl}">NFT</a></p>` : ""}
+    </div>` : ""}
   </div>
 `;
   }

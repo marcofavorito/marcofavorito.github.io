@@ -23,6 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://marcofavorito.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: marcofavorit
 github_username:  marcofavorito
+permalink: /blog/:title/
 
 ####################
 # jekyll-seo
@@ -54,7 +55,10 @@ defaults:
       path: ""
     values:
       image: favicon.ico
-
+  - scope:
+      path: "_posts/**/*.pdf"
+    values:
+      sitemap: false
 ############
 jquery:
   version: 3.5.1
@@ -75,11 +79,12 @@ google_analytics_measurements:
 - 'G-VLMZ2VWC3N'
 - 'G-DDYB9GX4XD'
 
-markdown: kramdown
+# markdown: kramdown
 theme: minima
 
 plugins:
   - jekyll-relative-links
+  - jekyll-postfiles
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-figure
@@ -87,8 +92,8 @@ plugins:
   - jekyll-regex-replace
   - jemoji
 relative_links:
-  enabled: true
-  collections: true
+  enabled: true 
+  collections: false 
 
 kramdown:  
   parse_block_html: true
