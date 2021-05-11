@@ -44,3 +44,4 @@
 2021-02-04T19:39:26+01:00	[out = std::ref(std::cout << "Hello ")](){ out.get() << "World!\n"; }();
 2021-02-28T15:30:53+01:00	When I was 4, my sister was 2. I am now 44. How old is my sister?
 2021-05-04T12:37:23+02:00	There's nothing more practical than a good theory.
+2021-05-11T11:19:00+02:00	If your paper got rejected, remember what happened with the Bogdanov twins and with professor S. Bestiale.
