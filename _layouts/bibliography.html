@@ -58,6 +58,10 @@ best paper awards.
 [<a href="{{ entry.ipfs }}">IPFS</a>]
 {%- endif -%}
 
+{%- if entry.url %}
+[<a href="{{ entry.url }}">URL</a>]
+{%- endif -%}
+
 {%- if entry.abstract %}
 [<a href="{% details_link key %}">Abstract</a>]
 {%- endif -%}
