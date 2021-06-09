@@ -28,5 +28,5 @@ For the list of my publications, please look at my Google Scholar <a href="https
 and DBLP <a href="https://dblp.uni-trier.de/pers/hd/f/Favorito:Marco"><img width="24" height="24" src="/assets/img/icons/dblp.png"></a> profiles, or [this page](./papers).
 
 My [Unstoppable Domain](https://unstoppabledomains.com/) is [marcofavorito.crypto](https://marcofavorito.crypto).
-My [ENS address](https://app.ens.domains/) is [marcofavorito.eth](marcofavorito.eth).
+My [ENS address](https://app.ens.domains/) is [marcofavorito.eth](https://marcofavorito.eth).
 
