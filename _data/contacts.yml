@@ -11,6 +11,10 @@
   data: marcofavorito
   href: https://t.me/marcofavorito
   icon: /assets/img/icons/telegram.svg
+- name: Discord
+  data: marcofavorito#4943
+  href: https://discord.com/users/marcofavorito#4943
+  icon: /assets/img/icons/discord.png
 - name: GitHub
   data: marcofavorito
   href: https://github.com/marcofavorito
