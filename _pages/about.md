@@ -22,7 +22,11 @@ decision making, in order to take the best of both worlds.
 
 I've got a MSc. and BSc. in Engineering in Computer Science, in the same university.
 
-I'm also a contributor to [Fetch.AI](https://fetch.ai/) [projects](https://github.com/fetchai/).
+Previously, I was a full-time Machine Learning Engineer at [Fetch.ai](https://fetch.ai/).
+I am one of the main contributors of the [AEA framework](https://github.com/fetchai/agents-aea/),
+which empowers developers to build decentralized autonomous software
+that trades on blockchains and perform other useful tasks for their owner.
+From time to time I still contribute to [Fetch.ai](https://fetch.ai/) [projects](https://github.com/fetchai/).
 
 For the list of my publications, please look at my Google Scholar <a href="https://scholar.google.it/citations?user=tJhhDGEAAAAJ"><img width="24" height="24" src="/assets/img/icons/scholar.svg"></a>
 and DBLP <a href="https://dblp.uni-trier.de/pers/hd/f/Favorito:Marco"><img width="24" height="24" src="/assets/img/icons/dblp.png"></a> profiles, or [this page](./papers).
