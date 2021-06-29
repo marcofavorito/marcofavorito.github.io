@@ -19,6 +19,9 @@ My research interests are in the area of Artificial Intelligence.
 In particular, I am interested in how to improve the interaction between
 Formal Methods and Machine Learning, especially in the context of
 decision making, in order to take the best of both worlds.
+Among my areas of research, there are: Non-Markovian Reinforcement Learning,
+Automata Theory, (Finite) Temporal Synthesis, Planning for Temporal Goals, 
+and Multi-Agent Systems.
 
 Previously, I was a full-time Machine Learning Engineer at [Fetch.ai](https://fetch.ai/).
 I am one of the main contributors of the [AEA framework](https://github.com/fetchai/agents-aea/),
