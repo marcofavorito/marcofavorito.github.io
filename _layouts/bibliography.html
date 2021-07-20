@@ -66,6 +66,11 @@ best paper awards.
 [<a href="{% details_link key %}">Abstract</a>]
 {%- endif -%}
 
+{%- if entry.slides %}
+[<a href="/papers/{{ entry.year }}/{{ entry.key }}-slides.pdf">Slides</a>]
+{%- endif -%}
+
+
 <div class="dialog" id="{{ entry.key }}bib" title="BibTeX" style="display:none" >
   <pre>{{ entry.bibtex }}</pre>
 </div>
