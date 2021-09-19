@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_US"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://marcofavorito.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://marcofavorito.me/" rel="alternate" type="text/html" hreflang="en_US" /><updated>2021-09-19T10:16:09+02:00</updated><id>https://marcofavorito.me/feed.xml</id><title type="html">Marco Favorito</title><subtitle>Marco Favorito personal web page.
+</subtitle><author><name>Marco Favorito</name></author><entry><title type="html">Crypto-Blogging</title><link href="https://marcofavorito.me/blog/crypto-blogging/" rel="alternate" type="text/html" title="Crypto-Blogging" /><published>2021-04-05T18:00:00+02:00</published><updated>2021-04-05T18:00:00+02:00</updated><id>https://marcofavorito.me/blog/crypto-blogging</id><content type="html" xml:base="https://marcofavorito.me/blog/crypto-blogging/">&lt;p&gt;Since the end of 2020, the cryptocurrency market has gained, 
+once again, mainstream attention.
+&lt;a href=&quot;https://cryptorank.io/ath&quot;&gt;All-time high prices for Bitcoin and Ethereum&lt;/a&gt;,
+&lt;a href=&quot;https://www.forbes.com/sites/philippsandner/2021/02/22/decentralized-finance-will-change-your-understanding-of-financial-systems/&quot;&gt;recognition of Decentralized Finance systems (DeFi)&lt;/a&gt;,
+&lt;a href=&quot;https://www.theguardian.com/technology/2021/mar/12/non-fungible-tokens-revolutionising-art-world-theft&quot;&gt;rise of Non-Fungible Tokens (NFTs)&lt;/a&gt;,
+and &lt;a href=&quot;More Institutional Investors Jumping Into Bitcoin Leaves Less to Go Around, Data Shows&quot;&gt;more institutional investors jumping in the cryptocurrency market&lt;/a&gt;
+are some of the traits of the new cryptomania wave.&lt;/p&gt;
+
+&lt;p&gt;In this post, I will try to adopt some of the applications
+of these technologies, with the eyes of a researcher and (when I have time :cry:) a blogger.&lt;/p&gt;
+
+&lt;h2 id=&quot;blogpost-timestamping&quot;&gt;Blogpost Timestamping&lt;/h2&gt;
+
+&lt;p&gt;A known application of blockchain-based Distributed Ledger Technologies
+is &lt;em&gt;trusted digital timestamping&lt;/em&gt; &lt;d-cite key=&quot;Haber91howto&quot;&gt;trusted digital timestamping&lt;/d-cite&gt; [@Haber91howto].
+Previously, there were several timestamping schemes and standards &lt;d-cite key=&quot;adams2001internet,ansi2016x9,ISOtimestamping,Massias99designof&quot;&gt;&lt;/d-cite&gt;,
+but they had to rely on a trusted third party Timestamping Authority (TSA)
+for the issuing of the timestamp.
+With the advent of the Bitcoin system, it is possible to
+use it as a decentralized 
+timestamping mechanism not only for transactions but also for arbitrary
+data, as if it acted as a &lt;em&gt;notary&lt;/em&gt; &lt;d-cite key=&quot;gipp2015decentralized&quot;&gt;&lt;/d-cite&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://opentimestamps.org/&quot;&gt;OpenTimestamps&lt;/a&gt; is an 
+open-source project that implements this idea.
+In particular, it uses Bitcoin block headers as time attestations: 
+proof that a notary that we trust attested to the fact that some data existed at some point in time.&lt;/p&gt;
+
+&lt;p&gt;For bloggers, a timestamp of their blogposts would be useful to prove that
+the post was not created after the date that the timestamper certifies.
+For example, this post is timestamped using OpenTimestamps.
+The timestamp is produced against the &lt;a href=&quot;crypto-blogging.pdf&quot;&gt;PDF version&lt;/a&gt; of the post.
+The links to the PDF version and the timestamp file are reported in the header of the post.
+Anyone can verify the correctness of the timestamp either
+by using the CLI tool &lt;a href=&quot;https://github.com/opentimestamps/opentimestamps-client#usage&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ots verify&lt;/code&gt;&lt;/a&gt;, 
+or by relying on a third-party service like &lt;a href=&quot;https://dgi.io/ots/&quot;&gt;this&lt;/a&gt;.
+I will try to keep this habit in the next posts.&lt;/p&gt;
+
+&lt;p&gt;As a reseracher, one could also timestamp PDF versions of his publications;
+however, it is less necessary as the published papers are already disseminated 
+on the web by trustworthy (but centralized) aggregators, publishers, and search engines,
+e.g. Google Scholar, DBLP, ArXiv etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;ipfs&quot;&gt;IPFS&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://ipfs.io/&quot;&gt;InterPlanetary File System&lt;/a&gt; (IPFS)
+is a peer-to-peer distributed file system that seeks to connect 
+all computing devices with the same system of files &lt;d-cite key=&quot;benet2014ipfs&quot;&gt;&lt;/d-cite&gt;.
+It is arguably one of the most interesting project of the decentralized web.&lt;/p&gt;
+
+&lt;p&gt;An entire website could be easily hosted
+on the IPFS network, like &lt;a href=&quot;https://juan.benet.ai/&quot;&gt;Juan Benet’s website&lt;/a&gt;,
+the creator of IPFS. All is needed is to 
+either run a local IPFS node on your machine, or to rely on
+&lt;a href=&quot;https://docs.ipfs.io/how-to/work-with-pinning-services/&quot;&gt;remote pinning services&lt;/a&gt;,
+like &lt;a href=&quot;https://pinata.cloud/&quot;&gt;Pinata&lt;/a&gt;,
+to improve the availability of your files.
+At the moment, I have only uploaded some of my documents
+(see the IPFS links in &lt;a href=&quot;/papers&quot;&gt;publications page&lt;/a&gt;),
+but eventually I will run the entire website on IPFS,
+so to not rely on any third-party services.&lt;/p&gt;
+
+&lt;h2 id=&quot;unstoppable-domains&quot;&gt;Unstoppable Domains&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://unstoppabledomains.com/&quot;&gt;Unstoppable Domains&lt;/a&gt;
+is a company building blockchain-based domains
+to replace cryptocurrency addresses with human-readable names.
+Being decentralized, such domains are inherently unstoppable
+(as long as the Ethereum blockchain and the transport
+layer it builds on are operational),
+and the sole owner is the owner of the private key 
+associated with the domain.
+The system works thanks to the Crypto Name Service (CNS)
+built on Ethereum, and consists of a bundle of smart contracts.
+See the &lt;a href=&quot;https://docs.unstoppabledomains.com/domain-registry-essentials/architecture-overview&quot;&gt;architecture documentation page&lt;/a&gt;
+ for more details.&lt;/p&gt;
+
+&lt;p&gt;I set up my Unstoppable Domain &lt;a href=&quot;https://marcofavorito.crypto&quot;&gt;marcofavorito.crypto&lt;/a&gt;
+that currently redirects to &lt;a href=&quot;https://marcofavorito.me&quot;&gt;marcofavorito.me&lt;/a&gt;
+(see transaction &lt;a href=&quot;https://etherscan.io/tx/0x56b0b5bcd81785be6735b2b53341499dce0a005c2bd1e24a007c6d89244e7e6c#eventlog&quot;&gt;here&lt;/a&gt;), 
+hosted on GitHub Pages.
+I also have associated to it my &lt;a href=&quot;https://etherscan.io/tx/0xe2356a5460382557e42f39413affa4da7a153879fb515ef0323873f02d822747/advanced#eventlog&quot;&gt;email address&lt;/a&gt;,
+and my &lt;a href=&quot;https://etherscan.io/tx/0x138299fb55f425d3ccb7a4281f16d46b5f606eecb114299ab486ffb0ab9287f0#eventlog&quot;&gt;BTC and ETH addresses&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;An easy way to navigate in the decentralized web is by means of
+&lt;a href=&quot;https://unstoppabledomains.com/extension&quot;&gt;this browser extension&lt;/a&gt;.
+If I had deployed the website on IPFS, I could have set up a redirection
+from my crypto-domain to the IPFS address of the website.&lt;/p&gt;
+
+&lt;h2 id=&quot;blogposts-as-nfts&quot;&gt;Blogposts as NFTs&lt;/h2&gt;
+
+&lt;p&gt;Non-Fungible Tokens (NFT),
+proposed in ERC-721 &lt;d-cite key=&quot;entriken2018eip&quot;&gt;&lt;/d-cite&gt; 
+are tokens minted on blockchain that are unique.
+An NFT is not like any other one, differently
+from ERC-20 tokens, which are fungible.
+This makes them particularily apt to
+represent ownership of digital assets.
+NFTs are now used by crypto artists
+(e.g. see &lt;a href=&quot;https://foreignpolicy.com/2021/03/19/nft-beeple-69-million-art-crypto-nonfungible-token/&quot;&gt;artist Beeple’s &lt;em&gt;Everydays: the First 5000 Days&lt;/em&gt; sold
+as NFT for $69m&lt;/a&gt;), 
+blockchain games, and several other uses to ensure digital scarcity and ownership.
+The Unstoppable Domain above is indeed an NFT.
+Usually, an NFT is minted on-chain and the data linked to it is stored
+off-chain in a content-addressed data storage such as IPFS.&lt;/p&gt;
+
+&lt;p&gt;This post is associated to &lt;a href=&quot;https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/27798962552534080114972654858550532991370133186513724228847828029296905027585&quot;&gt;this NFT&lt;/a&gt;,
+that represents the ownership of this post.
+Who knows, it could be the next Beeple’s &lt;em&gt;Everydays&lt;/em&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;As a technology at its early stages,
+when it comes to applications of blockchain systems, the sky’s the limit. 
+In this post, I wanted to play with several crypto-based
+services and see how they could be used for blogging.&lt;/p&gt;
+
+&lt;p&gt;Among other ideas not explored in this post, there are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://newsletter.banklesshq.com/p/how-to-tokenize-yourself-full&quot;&gt;Tokenize yourself&lt;/a&gt; as a professional/researcher/blogger.
+That is, make the token to represent something, material or immaterial, that you have or you can provide. For example,
+your working hours can be tokenized and then sold to people who’d like you to work for them, or to write the next blogpost :slightly_smiling_face:.
+The token can be provided on DeFi exchanges like &lt;a href=&quot;https://uniswap.org/&quot;&gt;Uniswap&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;NFTs can be a way to &lt;a href=&quot;https://www.seanblanda.com/nft-for-writers/&quot;&gt;post anonymously&lt;/a&gt; and still receive compensation for the work.&lt;/li&gt;
+  &lt;li&gt;NFTs allow for &lt;a href=&quot;https://dev.mirror.xyz/llJ_AboiDJwB_ZAFz-CXU7fL2p8v5Wz6MjfluLafewQ&quot;&gt;crowfunding writing&lt;/a&gt; in which 
+an author can be supported in advance by contributors that in turn receive equity ownership from the writer’s work;
+everything coordinated by a smart contract in a trustless setting.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marco Favorito</name></author><summary type="html">Since the end of 2020, the cryptocurrency market has gained, once again, mainstream attention. All-time high prices for Bitcoin and Ethereum, recognition of Decentralized Finance systems (DeFi), rise of Non-Fungible Tokens (NFTs), and more institutional investors jumping in the cryptocurrency market are some of the traits of the new cryptomania wave.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://marcofavorito.me/assets/posts/crypto-blogging/crypto.jpg" /><media:content medium="image" url="https://marcofavorito.me/assets/posts/crypto-blogging/crypto.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Learning Probabilistic Deterministic Automata</title><link href="https://marcofavorito.me/blog/learning-pdfas/" rel="alternate" type="text/html" title="Learning Probabilistic Deterministic Automata" /><published>2020-10-09T00:00:00+02:00</published><updated>2020-10-09T00:00:00+02:00</updated><id>https://marcofavorito.me/blog/learning-pdfas</id><content type="html" xml:base="https://marcofavorito.me/blog/learning-pdfas/">&lt;p&gt;These days I’ve been working on a problem that required the learning
+of a Probabilistic Deterministic Automata (PDFA) &lt;d-cite key=&quot;pdfa63&quot;&gt;&lt;/d-cite&gt;.
+In particular, the learning algorithm we are using
+provides guarantees on the total variation distance between
+the ground truth automaton $\mathcal{A}$ and the learned automaton $\mathcal{A}^\prime$ &lt;d-cite key=&quot;palmer2005&quot;&gt;&lt;/d-cite&gt;.
+In the following, I will provide more background definitions and details on my implementation of the algorithm.&lt;/p&gt;
+
+&lt;h2 id=&quot;pdfa&quot;&gt;PDFA&lt;/h2&gt;
+
+&lt;p&gt;A &lt;em&gt;Probabilistic Deterministic Finite Automaton&lt;/em&gt; &lt;d-cite key=&quot;pdfa63&quot;&gt;&lt;/d-cite&gt; $\mathcal{A}$ is 
+a tuple $\langle Q, \Sigma, q_0, q_f, \tau, \gamma \rangle$ where:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$Q$ is the set of states.&lt;/li&gt;
+  &lt;li&gt;$\Sigma$ is the alphabet.&lt;/li&gt;
+  &lt;li&gt;$q_0 \in Q$ is the initial state.&lt;/li&gt;
+  &lt;li&gt;$q_f \not\in Q$ is the final state.&lt;/li&gt;
+  &lt;li&gt;$\tau: Q \times \Sigma \to Q$ is the transition function.&lt;/li&gt;
+  &lt;li&gt;$\gamma: Q \times \Sigma \to [0, 1]$ is a function that associates a transition 
+$(q, \sigma)$ to the probability that that transition can be taken.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Other requirements for a valid PDFA are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;$\forall q.\sum_{\sigma \in \Sigma} \gamma(q, \sigma) = 1$, that is, the probabilities of the outgoing transitions from a given state $q$ must sum to $1$.&lt;/li&gt;
+  &lt;li&gt;when $\tau(q, \sigma)$ is undefined, $\gamma(q, \sigma) = 0$.&lt;/li&gt;
+  &lt;li&gt;$\forall q. \exists s\in\Sigma^*. \tau(q, s) = q_f \wedge \gamma(q, s) &amp;gt; 0$, i.e. $q_f$ is reachable with probability non-zero from any state.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A PDFA $\mathcal{A}$ defines a probability distribution over strings in $\Sigma^*$. Notice that 
+the reachability of the final state $q_f$ ensures that any execution of $\mathcal{A}$ will halt with probability $1$.&lt;/p&gt;
+
+&lt;p&gt;It is useful to extend $\tau$ and $\gamma$ for succinteness purposes, i.e.:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;$\tau(q, s) = \tau(\tau(q, \sigma_1), \sigma_2…\sigma_k$&lt;/li&gt;
+  &lt;li&gt;$\gamma(q, s) = \gamma(q, \sigma_1) \cdot \gamma(\tau(q, \sigma_1), \sigma_2…\sigma_k)$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let $D_{\mathcal{A}}(s)$ be the probability distribution over strings $\Sigma^*$.&lt;/p&gt;
+
+&lt;p&gt;We have:&lt;/p&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;
+$D_{\mathcal{A}}(s) = \gamma(q_0,s)$ for $s$ such that $\tau(q_0,s) = q_f$.
+&lt;/p&gt;
+
+&lt;p&gt;Moreover, we define the &lt;em&gt;variation distance&lt;/em&gt; $L_1$ between two distributions
+$D_1$ and $D_2$ over $\Sigma^&lt;em&gt;$ as 
+$L_1(D_1, D_2) = \sum_{s\in\Sigma^&lt;/em&gt;} | D_1(s) - D_2(s) |$.&lt;/p&gt;
+
+&lt;p&gt;Later, it will be useful the following definition of $L_{\infty}$-norm between two distributions $D$, $D^\prime$:&lt;/p&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;
+$L_{\infty}(D, D^\prime) = \max_{s\in\Sigma^*} |D(s) - D^\prime(s)|$
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;simple-pdfa-example.jpeg&quot; alt=&quot;A Simple PDFA with $\zeta,\zeta^\prime\in [0, 1]$ &quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;pdfas-in-python&quot;&gt;PDFAs in Python&lt;/h2&gt;
+
+&lt;p&gt;I implemented a &lt;a href=&quot;https://github.com/marcofavorito/pdfa-learning&quot;&gt;tiny Python library&lt;/a&gt;&lt;d-footnote&gt;Not meant to be production-ready :smile:&lt;/d-footnote&gt; to handle PDFAs.
+In the following code snippet, you can see the implementation of the class for representing
+a PDFA.&lt;/p&gt;
+
+&lt;d-code block=&quot;&quot; language=&quot;python&quot;&gt;
+&quot;&quot;&quot;Base module of the PDFA package.&quot;&quot;&quot;
+
+from dataclasses import dataclass
+from typing import AbstractSet, Collection, Set, Tuple
+
+import numpy as np
+
+from src.helpers.base import assert_
+from src.pdfa.helpers import (
+    _check_ergodicity,
+    _check_is_legal_character,
+    _check_is_legal_state,
+    _check_is_legal_word,
+    _check_transitions_are_legal,
+)
+from src.pdfa.types import Character, State, TransitionFunctionDict, Word
+
+
+@dataclass(frozen=True)
+class PDFA:
+    &quot;&quot;&quot;
+    Probabilistic Deterministic Finite Automaton.
+
+    - The set of states is the set of integers {0, ..., nb_states - 1} (nb_states &amp;gt; 0)
+    - The alphabet is the set of integers {0, ..., alphabet_size - 1}
+    - The initial state is always 0
+    - The final state is always &quot;nb_states&quot;
+    - The transition function is a nested dictionary:
+        - at the first level, we have states as keys and the dict of outgoing transition_dict as values
+        - a dict of outgoing transition_dict has characters as keys and a tuple of next state and probability
+          as value.
+
+    At initialization times, checks on the consistency of the transition dictionary are done.
+    &quot;&quot;&quot;
+
+    nb_states: int
+    alphabet_size: int
+    transition_dict: TransitionFunctionDict
+
+    def __post_init__(self):
+        &quot;&quot;&quot;Post-initialization checks.&quot;&quot;&quot;
+        assert_(self.nb_states &amp;gt; 0, &quot;Number of states must be greater than zero.&quot;)
+        assert_(self.alphabet_size &amp;gt; 0, &quot;Alphabet size must be greater than zero.&quot;)
+        _check_transitions_are_legal(
+            self.transition_dict, self.nb_states, self.alphabet_size
+        )
+        _check_ergodicity(self.transition_dict, self.nb_states, self.final_state)
+
+    def get_successor(self, state: State, character: Character) -&amp;gt; State:
+        &quot;&quot;&quot;
+        Get the successor state.
+
+        :param state: the starting state.
+        :param character: the read symbol.
+        :return: the new state.
+        &quot;&quot;&quot;
+        _check_is_legal_state(state, self.nb_states)
+        _check_is_legal_character(character, self.alphabet_size)
+        next_transitions = self.transition_dict.get(state, {})
+        assert_(
+            character in next_transitions,
+            f&quot;Cannot read character {state} from state {character}.&quot;,
+        )
+        next_state, _probability = next_transitions[character]
+        return next_state
+
+    def get_successors(self, state: State) -&amp;gt; AbstractSet[State]:
+        &quot;&quot;&quot;Get the successors.&quot;&quot;&quot;
+        _check_is_legal_state(state, self.nb_states)
+        return {
+            successor
+            for _character, (successor, _probability) in self.transition_dict[
+                state
+            ].items()
+        }
+
+    def get_next_transitions(
+        self, state: State
+    ) -&amp;gt; Collection[Tuple[Character, float, State]]:
+        &quot;&quot;&quot;Get next transitions from a state.&quot;&quot;&quot;
+        _check_is_legal_state(state, self.nb_states)
+        return {
+            (character, probability, successor)
+            for character, (successor, probability) in self.transition_dict[
+                state
+            ].items()
+        }
+
+    @property
+    def initial_state(self):
+        &quot;&quot;&quot;Get the initial state.&quot;&quot;&quot;
+        return 0
+
+    @property
+    def final_state(self) -&amp;gt; State:
+        &quot;&quot;&quot;Get the final state.&quot;&quot;&quot;
+        return self.nb_states
+
+    @property
+    def states(self) -&amp;gt; Set[State]:
+        &quot;&quot;&quot;Get the set of states.&quot;&quot;&quot;
+        return set(range(self.nb_states))
+
+    @property
+    def transitions(self) -&amp;gt; Collection[Tuple[State, Character, float, State]]:
+        &quot;&quot;&quot;Get the transitions.&quot;&quot;&quot;
+        return {
+            (start, char, prob, end)
+            for start, out_transitions in self.transition_dict.items()
+            for char, (end, prob) in out_transitions.items()
+        }
+
+    def get_probability(self, word: Word):
+        &quot;&quot;&quot;Get the probability of a word.&quot;&quot;&quot;
+        if len(word) == 0:
+            return 0.0
+
+        _check_is_legal_word(word, self.alphabet_size)
+        result = 1.0
+        current_state = self.initial_state
+        for character in word:
+            if current_state is None or current_state == self.final_state:
+                result = 0.0
+                break
+            next_state, probability = self.transition_dict.get(current_state, {}).get(
+                character, (None, 0.0)
+            )
+            current_state = next_state
+            result *= probability
+        return 0.0 if current_state != self.final_state else result
+
+    def sample(self) -&amp;gt; Word:
+        &quot;&quot;&quot;Sample a word.&quot;&quot;&quot;
+        current_state = self.initial_state
+        word = []
+        while current_state != self.final_state:
+            characters, probabilities, next_states = zip(
+                *self.get_next_transitions(current_state)
+            )
+            index = np.random.choice(range(len(characters)), p=probabilities)
+            next_character = characters[index]
+            current_state = next_states[index]
+            word.append(next_character)
+        return word
+
+&lt;/d-code&gt;
+
+&lt;p&gt;In particular:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The set of states is the set of integers $\{ 0, …, nb\_states - 1\}$ (with $nb\_states &amp;gt; 0$)&lt;/li&gt;
+  &lt;li&gt;The alphabet is the set of integers $\{0, …, alphabet\_size - 1\}$&lt;/li&gt;
+  &lt;li&gt;The initial state is always $q_0 = 0$&lt;/li&gt;
+  &lt;li&gt;The final state is always $q_f = nb\_states$&lt;/li&gt;
+  &lt;li&gt;The transition function is a nested dictionary:
+    &lt;ul&gt;
+      &lt;li&gt;at the first level, we have states as keys and the dict of outgoing $transition\_dict$ as values&lt;/li&gt;
+      &lt;li&gt;a dict of outgoing transitions has characters $\sigma$ as keys and a tuple of next state and probability
+$(q^\prime, p)$ as value.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For example, to create an object representing the PDFA showed above (with $\zeta = 0.4$ and $\zeta^\prime = 0.7$):&lt;/p&gt;
+
+&lt;d-code block=&quot;&quot; language=&quot;python&quot;&gt;
+from src.pdfa import PDFA
+p1 = 0.4
+p2 = 0.7
+automaton = PDFA(
+    nb_states=2,
+    alphabet_size=2,
+    transition_dict={
+        0: {
+            0: (1, p1),
+            1: (2, 1 - p1),
+        },
+        1: {
+            0: (2, 1 - p2),
+            1: (1, p2),
+        },
+    },
+)
+&lt;/d-code&gt;
+
+&lt;p&gt;There is a helper function to render the automaton with Graphviz:&lt;/p&gt;
+
+&lt;d-code block=&quot;&quot; language=&quot;python&quot;&gt;
+from src.pdfa.render import to_graphviz
+to_graphviz(automaton).render(&quot;path-to-file&quot;)
+&lt;/d-code&gt;
+
+&lt;p&gt;That results in:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./rendered-automaton.svg&quot; alt=&quot;Result.&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;learning-a-pdfa&quot;&gt;Learning a PDFA&lt;/h2&gt;
+
+&lt;p&gt;As stated earlier, the library also implements a PDFA learning algorithm, proposed in &lt;d-cite key=&quot;palmer2005&quot;&gt;&lt;/d-cite&gt;.&lt;/p&gt;
+
+&lt;p&gt;There exist other approaches (&lt;d-cite key=&quot;ron1998,clark2004&quot;&gt;&lt;/d-cite&gt;). In &lt;d-cite key=&quot;ron1998&quot;&gt;&lt;/d-cite&gt;, they show how to learn &lt;em&gt;acyclic&lt;/em&gt; PDFAs, 
+and apply the algorithm to speech and handwriting recognition. In &lt;d-cite key=&quot;clark2004&quot;&gt;&lt;/d-cite&gt;, 
+they are able to learn general PDFAs, using an upper-bound in terms of the Kullback–Leibler divergence &lt;d-cite key=&quot;kullback1951&quot;&gt;&lt;/d-cite&gt; 
+between the true distribution and the learned one. The one we are going to describe learns a PDFA
+whose total variation distance from the true PDFA is upper-bounded by an $\varepsilon$:&lt;/p&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;
+$L(D, \hat{D}) = \sum_{s\in\Sigma^*} |D(s) - \hat{D}(s)| \le \varepsilon$
+&lt;/p&gt;
+
+&lt;p&gt;All the mentioned algorithms are &lt;em&gt;Probably Approximately Correct&lt;/em&gt; for some probability $\delta$ to fail and some error
+tolerance $\varepsilon$ &lt;d-cite key=&quot;valiant1984&quot;&gt;&lt;/d-cite&gt;. That is, with probability $1-\delta$, 
+they learn a model whose error measure is guaranteed to be upper-bounded by some quantity depending on $\varepsilon$.&lt;/p&gt;
+
+&lt;p&gt;An important concept in the context of the learning of a PDFA is the &lt;em&gt;distinguishability&lt;/em&gt; of
+any pair of states. Formally, we say that a pair of nodes
+$(q_1,q_2)$ are &lt;em&gt;$\mu$-distinguishable&lt;/em&gt; if&lt;/p&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;
+$L_{\infty}(D_{q_1}, D_{q_2}) = \max_{s\in\Sigma^*} |D_{q_1}(s) - D_{q_2}(s)| \ge \mu$
+&lt;/p&gt;
+&lt;p&gt;where $D_{q}$ is the distribution represented by the automaton starting from $q$.
+The idea is that $q_1$ and $q_2$ should have sufficiently different suffix distributions 
+in order to be considered separate states.&lt;/p&gt;
+
+&lt;p&gt;The algorithm is quite complex to be explained in detail here.
+It takes in input the following parameters:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;$\Sigma$: the alphabet size.&lt;/li&gt;
+  &lt;li&gt;$n$: an upper bound on the number of states of the target automaton.&lt;/li&gt;
+  &lt;li&gt;$\mu$: a lower bound on distinguishability.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Plus the PAC parameters $\delta$ and $\varepsilon$.&lt;/p&gt;
+
+&lt;p&gt;It is composed in two parts:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Estimation of a &lt;em&gt;subgraph&lt;/em&gt; $H$ of the underlying graph of a PDFA;&lt;/li&gt;
+  &lt;li&gt;Estimation of the probabilities on the edges.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here the pseudocode of both algorithms:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;algorithm-1.png&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Find a subgraph $H$ of $\mathcal{A}$&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;algorithm-2.png&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Find the probabilities $\gamma(q,\sigma)$ forall $q,\sigma$&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;For both algorithms, we need to generate a certain amount of samples from the true PDFA $\mathcal{A}$.
+However, despite the number of samples is polynomial 
+in terms of all the parameters of the algorithm,
+the amount of samples needed for the PAC guarantees is &lt;em&gt;computationally prohibitive&lt;/em&gt; 
+for even reasonable assignment of such parameters.&lt;/p&gt;
+
+&lt;p&gt;For example, say we want to learn an automaton with $n=2$, $|\Sigma| = 2$, $\mu = 0.1$, and 
+PAC parameters $\varepsilon = 0.1$ and $\delta^\prime = \delta^{\prime\prime} = 0.1$ 
+($\delta^\prime$ is the probability of failure of Algorithm 1, whereas 
+ $\delta^{\prime\prime}$ is the probability of failure of Algorithm 2. They are
+ such that $\delta^\prime + \delta^{\prime\prime} = \delta$).&lt;/p&gt;
+
+&lt;p&gt;The following code snippet compute the number of samples for Algorithm 1:&lt;/p&gt;
+
+&lt;d-code block=&quot;&quot; language=&quot;python&quot;&gt;
+&quot;&quot;&quot;Compute sample size for Algorithm 1.&quot;&quot;&quot;
+from math import ceil, log2, log
+
+def compute_m0(n: int, s: int, mu: float, eps: float, delta_1: float):
+    return ceil((16 / mu) ** 2 * (log2(16 / delta_1 / mu) + log2(n * s) + n * s))
+
+def sample_size_1(n: int, s: int, mu: float, eps: float, delta_1: float):
+    &quot;&quot;&quot;Compute N for Algorithm 1.&quot;&quot;&quot;
+    m0 = compute_m0(n, s, mu, eps, delta_1)
+    N1 = 8 * (n ** 2) * (s ** 2) / (eps ** 2) * (log((2 ** (n * s)) * n * s / delta_1))
+    N2 = 4 * m0 * n * s / eps
+    N = ceil(max(N1, N2))
+    return N
+
+&lt;/d-code&gt;
+
+&lt;p&gt;This one does the same but for Algorithm 2:&lt;/p&gt;
+&lt;d-code block=&quot;&quot; language=&quot;python&quot;&gt;
+&quot;&quot;&quot;Compute sample size for Algorithm 2.&quot;&quot;&quot;
+from math import ceil, log
+
+def sample_size_2(n: int, s: int, mu: float, eps: float, delta_2: float):
+    n1 = 2 * n * s / delta_2
+    n2 = (64 * n * s / eps / delta_2) ** 2
+    n3 = 32 * n * s / eps
+    n4 = log(2 * n * s / delta_2)
+    N = ceil(n1 * n2 * n3 * n4)
+    return N
+
+&lt;/d-code&gt;
+
+&lt;p&gt;The number of samples for Algorithm 1 is given by:&lt;/p&gt;
+
+&lt;d-code block=&quot;&quot; language=&quot;python&quot;&gt;
+n = 2
+s = 2
+mu = 0.1
+eps = 0.1
+delta_1 = 0.1
+N = sample_size_1(n, s, mu, eps, delta_1)
+&lt;/d-code&gt;
+
+&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;N&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;68173280&lt;/code&gt; ($\approx 68 \cdot 10^6$ number of samples).&lt;/p&gt;
+
+&lt;p&gt;For Algorithm 2:&lt;/p&gt;
+&lt;d-code block=&quot;&quot; language=&quot;python&quot;&gt;
+delta_2 = 0.1
+N = sample_size_2(n, s, mu, eps, delta_2)
+&lt;/d-code&gt;
+
+&lt;p&gt;The result in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;N&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;294072829470708&lt;/code&gt; ($\approx 3 \cdot 10^{15}$ number of samples).&lt;/p&gt;
+
+&lt;p&gt;As said, these numbers are not practical for any personal computer. 
+However, for some examples, a much lower number of samples can be enough,
+as shown in the next section.&lt;/p&gt;
+
+&lt;h2 id=&quot;implementation-of-the-learning-algorithm&quot;&gt;Implementation of the learning algorithm&lt;/h2&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;https://github.com/marcofavorito/pdfa-learning&quot;&gt;same repository&lt;/a&gt;
+(in &lt;a href=&quot;https://github.com/marcofavorito/pdfa-learning/tree/main/src/learn_pdfa&quot;&gt;src/learning-pdfas/&lt;/a&gt;),
+you can find the implementation of the &lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0304397507005476&quot;&gt;(Puterman &amp;amp; Goldberg, 2005) algorithm&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You should execute the code snippet in the previous sections
+in order to get the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;automaton&lt;/code&gt; variable.&lt;/p&gt;
+
+&lt;d-code block=&quot;&quot; language=&quot;python&quot;&gt;
+from src.learn_pdfa.base import learn_pdfa
+from src.learn_pdfa.common import Generator, MultiprocessedGenerator, SimpleGenerator
+
+generator = MultiprocessedGenerator(SimpleGenerator(automaton), nb_processes=8)
+
+learned_pdfa = learn_pdfa(
+    sample_generator=generator,
+    alphabet_size=2,
+    epsilon=0.4,
+    delta_1=0.2,
+    delta_2=0.2,
+    mu=0.1,
+    n=3,
+    # the following are upper bound to the number of samples.
+    n1_max_debug=3000000,
+    n2_max_debug=1000000,
+    m0_max_debug=3000000 / 10,
+)
+&lt;/d-code&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;generator&lt;/code&gt; is an object that generates the samples from a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PDFA&lt;/code&gt; instance.
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SimpleGenerator&lt;/code&gt; is just a wrapper to an automaton, whereas 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MultiprocessedGenerator&lt;/code&gt; parallelizes the sampling using multiprocessing. &lt;d-footnote&gt;Would be interesting to devise a sampling strategy that is _not_ sequential.&lt;/d-footnote&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice the parameters &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n1_max_debug1&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n2_max_debug&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m0_max_debug&lt;/code&gt;.
+They are used to cap the number of samples for Algorithm 1, 
+the number of samples for Algorithm 2, and
+the value $m_0$, respectively.&lt;/p&gt;
+
+&lt;p&gt;You can see the same example &lt;a href=&quot;https://github.com/marcofavorito/pdfa-learning/blob/main/notebooks/02-pdfa-learning.ipynb&quot;&gt;in this notebook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This library provides a simple (Python) implementation of Probabilistic Deterministic Finite Automata,
+and a PAC-learning algorithm &lt;d-cite key=&quot;palmer2005&quot;&gt;&lt;/d-cite&gt;.
+As future work,  the other algorithms could be implemented, e.g. the one for the acyclic PDFAs &lt;d-cite key=&quot;ron1998&quot;&gt;&lt;/d-cite&gt; 
+and the one using the KL divergence as error metric &lt;d-cite key=&quot;clark2004&quot;&gt;&lt;/d-cite&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;</content><author><name>Marco Favorito</name></author><summary type="html">These days I’ve been working on a problem that required the learning of a Probabilistic Deterministic Automata (PDFA) . In particular, the learning algorithm we are using provides guarantees on the total variation distance between the ground truth automaton $\mathcal{A}$ and the learned automaton $\mathcal{A}^\prime$ . In the following, I will provide more background definitions and details on my implementation of the algorithm.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://marcofavorito.me/probabilistic-automaton.jpg" /><media:content medium="image" url="https://marcofavorito.me/probabilistic-automaton.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Visualize the changes of the Constitutional Referendum with Git/GitHub</title><link href="https://marcofavorito.me/blog/visualize-referendum-changes/" rel="alternate" type="text/html" title="Visualize the changes of the Constitutional Referendum with Git/GitHub" /><published>2020-09-18T18:00:00+02:00</published><updated>2020-09-18T18:00:00+02:00</updated><id>https://marcofavorito.me/blog/visualize-referendum-changes</id><content type="html" xml:base="https://marcofavorito.me/blog/visualize-referendum-changes/">&lt;p&gt;In Italy, in the 20th and the 21st of September 2020, there will be a 
+&lt;a href=&quot;https://en.wikipedia.org/wiki/2020_Italian_constitutional_referendum&quot;&gt;constitutional referendum&lt;/a&gt;
+to change the &lt;a href=&quot;https://en.wikipedia.org/wiki/Constitution_of_Italy&quot;&gt;Constitution of the Italian Republic&lt;/a&gt; 
+about the reduction of the number of eligible members of Parliament.
+In particular, for the Chamber of Deputies from 630 to 400 components, and 
+for the Senate from 315 to 200.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;a href=&quot;https://en.wikipedia.org/wiki/2020_Italian_constitutional_referendum&quot;&gt;
+    &lt;img alt=&quot;Referendum.&quot; src=&quot;./referendum.jpeg&quot; /&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;As you might expect, all the news and the media talked about it 
+more or less incessantly in the few weeks before the voting days. 
+However, most people don’t check &lt;em&gt;what&lt;/em&gt; changed in the Constitution. 
+Of course, it is not a particular issue in this specific case, since 
+the changes are quite minimal, and a voter should be more interested 
+into the consequences that a reform brings, rather than the actual words, 
+that might be too technical to appreciate them. Nevertheless, 
+I believe it should be good practice for the “modern citizen”.&lt;/p&gt;
+
+&lt;p&gt;I decided to improve the accessibility to the changes and, being a software engineer, 
+my first thought was to use the most successful version control system: 
+&lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;. The process
+of changing the text of the laws might be roughly mapped into 
+the famous &lt;a href=&quot;https://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;Git Workflow&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt;, the current active version of the law;&lt;/li&gt;
+  &lt;li&gt;on other &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;branches&lt;/code&gt;, the work-in-progress for specific topics;&lt;/li&gt;
+  &lt;li&gt;branching off from topic branches would be like amendments on the associated topic;&lt;/li&gt;
+  &lt;li&gt;pull requests are proposals to apply the changes to the main text (only on GitHub though).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Nowadays, the development of a reform is discussed in the Parliament; 
+however, would be interesting to keep track of all the changes made 
+during the discussion, and it would be much easier to analyze and verify 
+for all the citizens. It would surely make easier the task of accountability (who did what).&lt;/p&gt;
+
+&lt;p&gt;I tested the approach for the incoming referendum. 
+&lt;a href=&quot;https://github.com/marcofavorito/costituzione-della-repubblica-italiana&quot;&gt;In this repo&lt;/a&gt;,
+you will find the text of the Constitution (in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;txt&lt;/code&gt; format) 
+and an open &lt;a href=&quot;https://github.com/marcofavorito/costituzione-della-repubblica-italiana/pull/1&quot;&gt;pull request&lt;/a&gt;
+with the changes proposed by the proposed reform (ID &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;19A06354&lt;/code&gt;).
+The changes are taken from the &lt;a href=&quot;https://www.gazzettaufficiale.it/eli/id/2019/10/12/19A06354/sg&quot;&gt;official source “Gazzetta Ufficiale”&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;a href=&quot;https://github.com/marcofavorito/costituzione-della-repubblica-italiana/pull/1&quot;&gt;
+    &lt;img alt=&quot;Changes introduced by the 2020's constitutional reform.&quot; src=&quot;changes.png&quot; /&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Potential future work:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;automatize the process using NLP techniques to extract the proposed changes;&lt;/li&gt;
+  &lt;li&gt;define a canonic form for the law text (e.g. each line must have a maximum length etc.)&lt;/li&gt;
+  &lt;li&gt;being more formal in the namings and formats (&lt;a href=&quot;https://en.wikipedia.org/wiki/IANAL&quot;&gt;IANAL&lt;/a&gt; :D)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marco Favorito</name></author><summary type="html">In Italy, in the 20th and the 21st of September 2020, there will be a constitutional referendum to change the Constitution of the Italian Republic about the reduction of the number of eligible members of Parliament. In particular, for the Chamber of Deputies from 630 to 400 components, and for the Senate from 315 to 200.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://marcofavorito.me/referendum.jpeg" /><media:content medium="image" url="https://marcofavorito.me/referendum.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Hello!</title><link href="https://marcofavorito.me/blog/hello/" rel="alternate" type="text/html" title="Hello!" /><published>2020-09-06T16:00:00+02:00</published><updated>2020-09-06T16:00:00+02:00</updated><id>https://marcofavorito.me/blog/hello</id><content type="html" xml:base="https://marcofavorito.me/blog/hello/">&lt;p&gt;Hi, this is my first post. More will come (maybe), stay tuned :smile:&lt;/p&gt;</content><author><name>Marco Favorito</name></author><summary type="html">Hi, this is my first post. More will come (maybe), stay tuned :smile:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://marcofavorito.me/favicon.ico" /><media:content medium="image" url="https://marcofavorito.me/favicon.ico" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
