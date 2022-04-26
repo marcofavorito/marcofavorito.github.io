@@ -25,10 +25,10 @@ Automata Theory, (Finite) Temporal Synthesis, Planning for Temporal Goals,
 and Multi-Agent Systems.
 
 Previously, I was a full-time Machine Learning Engineer at [Fetch.ai](https://fetch.ai/).
-I am one of the main contributors of the [AEA framework](https://github.com/fetchai/agents-aea/),
+I am one of the main contributors of the [AEA framework](https://valory-xyz.github.io/open-aea/)
+([original repo](https://github.com/fetchai/agents-aea/), [fork](https://github.com/valory-xyz/open-aea)),
 which empowers developers to build decentralized autonomous software
 that trades on blockchains and perform other useful tasks for their owner.
-From time to time I still contribute to [Fetch.ai](https://fetch.ai/) [projects](https://github.com/fetchai/).
 
 I have got both a MSc. and BSc. in Engineering in Computer Science at Sapienza University.
 
