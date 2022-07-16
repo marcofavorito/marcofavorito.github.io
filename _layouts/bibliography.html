@@ -52,7 +52,13 @@ best paper awards.
 <!-- {%- if links.pdf %} [<a href="/{{ links.pdf }}">PDF</a>] {%- endif %} -->
 [<a href="javascript:bibtex('{{ entry.key }}bib')">Bibtex</a>]
 
+{%- if entry.note %}
+  {%- if entry.note != "no pdf" %}
+    [<a href="/papers/{{ entry.year }}/{{ entry.key }}.pdf">PDF</a>]
+  {%- endif -%}
+{% else %}
 [<a href="/papers/{{ entry.year }}/{{ entry.key }}.pdf">PDF</a>]
+{%- endif -%}
 
 {%- if entry.ipfs %}
 [<a href="{{ entry.ipfs }}">IPFS</a>]
