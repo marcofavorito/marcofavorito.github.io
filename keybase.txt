@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/marcofavorito
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://marcofavorito.me
+  * I am marcofavorito (https://keybase.io/marcofavorito) on keybase.
+  * I have a public key ASB9CbwbJloLQ4vBFaLNXI-i5Pp9j9gf0lbD9OOLe0PavAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120fba44386b2517e94c0401cb55c9af4000b7816b22ebcdae2ed400dad430444930a",
+      "host": "keybase.io",
+      "kid": "01207d09bc1b265a0b438bc115a2cd5c8fa2e4fa7d8fd81fd256c3f4e38b7b43dabc0a",
+      "uid": "cf99774c8c23dd279d7fcead49156619",
+      "username": "marcofavorito"
+    },
+    "merkle_root": {
+      "ctime": 1606318584,
+      "hash": "2f1147b427c2d498213676f35d4dc7c8a6b549866ad8b2df91749cb20c161e29f413dcdbab7590077e6b75b2ed0bade6b0b4dc70c841db7509b99496f9f9cbf5",
+      "hash_meta": "7468de9a521ca93b92ab9b369ead8ec8b131c9a1f971a8ee5b27d4e605707c55",
+      "seqno": 18223334
+    },
+    "service": {
+      "entropy": "gSSPEX6Y/3lZQjCzJSMMOP9G",
+      "hostname": "marcofavorito.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.2"
+  },
+  "ctime": 1606318633,
+  "expire_in": 504576000,
+  "prev": "ac6d81ef80ef3de6d274616ec39f7b0d7ce763a11f4e2b8e9fba68b37e0072e0",
+  "seqno": 44,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgfQm8GyZaC0OLwRWizVyPouT6fY/YH9JWw/Tji3tD2rwKp3BheWxvYWTESpcCLMQgrG2B74DvPebSdGFuw597DXznY6EfTiuOn7pos34AcuDEINK32bQUQqDbDrgtYUtu0cn8FD0Xwzvqz4f2P4K+h5pzAgHCo3NpZ8RA+yhvIvTSZVH/AZu1nuPI80i6+WiGJq9oZNsWX5WpQXksMfieFupNocmmpnLMaN8YghFYw4Z5XEN7ZN4WAmPrBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHjgVW6VYVlGgm+8CY34vln5HqNaxMlNpaJVeBs3MbN9o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/marcofavorito
+
+==================================================================

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- <title>Crypto-Blogging</title> -->
+<!-- name and description are set by Jekyll SEO -->
+<meta name = "robots" content = "index, follow">
+<meta name = "keywords" content = "marco favorito, phd, computer science, artificial intelligence, research, sapienza">
+
+<meta property="og:type" content="website"> 
+
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<link rel="canonical" href="https://marcofavorito.me/blog/crypto-blogging/">
+<link rel="alternate" type="application/rss+xml" title="Marco Favorito" href="/feed.xml">
+
+
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Crypto-Blogging | Marco Favorito</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Crypto-Blogging" />
+<meta name="author" content="Marco Favorito" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="OpenTimestamps, IPFS, and NFTs for the blockchain era of blogging." />
+<meta property="og:description" content="OpenTimestamps, IPFS, and NFTs for the blockchain era of blogging." />
+<link rel="canonical" href="https://marcofavorito.me/blog/crypto-blogging" />
+<meta property="og:url" content="https://marcofavorito.me/blog/crypto-blogging" />
+<meta property="og:site_name" content="Marco Favorito" />
+<meta property="og:image" content="https://marcofavorito.me/assets/posts/crypto-blogging/crypto.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-05T18:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://marcofavorito.me/assets/posts/crypto-blogging/crypto.jpg" />
+<meta property="twitter:title" content="Crypto-Blogging" />
+<meta name="twitter:site" content="@marcofavorit" />
+<meta name="twitter:creator" content="@Marco Favorito" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Marco Favorito","url":"https://marcofavorito.me"},"dateModified":"2021-04-05T18:00:00+02:00","datePublished":"2021-04-05T18:00:00+02:00","description":"OpenTimestamps, IPFS, and NFTs for the blockchain era of blogging.","headline":"Crypto-Blogging","image":"https://marcofavorito.me/assets/posts/crypto-blogging/crypto.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://marcofavorito.me/blog/crypto-blogging"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://marcofavorito.me/favicon.ico"},"name":"Marco Favorito"},"url":"https://marcofavorito.me/blog/crypto-blogging"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    
+<!-- MathJax -->
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    
+  </head>
+
+  <d-front-matter>
+    <script async type="text/json">{
+      "title": "Crypto-Blogging",
+      "description": "OpenTimestamps, IPFS, and NFTs for the blockchain era of blogging.",
+
+      "published": "2021-04-05",
+      "authors": [
+        
+        {
+          "author": "Marco Favorito",
+          "authorURL": "https://marcofavorito.me",
+          "affiliations": [
+            
+          ]
+        }
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+      ,
+      "nftUrl": "https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/27798962552534080114972654858550532991370133186513724228847828029296905027585"
+      
+      ,
+      "hasPdf": true
+      
+
+    }</script>
+  </d-front-matter>
+
+  <body class="page">
+
+    <!-- Header -->
+
+    <header class="site-header">
+
+  <div class="wrapper">
+<!--
+    <a class="site-title" rel="author" href="/">Marco Favorito</a>
+	--><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewbox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+            
+            <a class="page-link " href="/">About</a>
+            
+            <a class="page-link " href="/papers">Publications</a>
+            
+        </div>
+      </nav>
+</div>
+</header>
+
+
+
+    <!-- Content -->
+    <main class="page-content" aria-label="Content">
+    <div class="post distill">
+
+      <d-title>
+        <h1>Crypto-Blogging</h1>
+        <p>OpenTimestamps, IPFS, and NFTs for the blockchain era of blogging.</p>
+      </d-title>
+
+      <d-byline></d-byline>
+
+      <d-article class="l-body">
+        <p>Since the end of 2020, the cryptocurrency market has gained, 
+once again, mainstream attention.
+<a href="https://cryptorank.io/ath">All-time high prices for Bitcoin and Ethereum</a>,
+<a href="https://www.forbes.com/sites/philippsandner/2021/02/22/decentralized-finance-will-change-your-understanding-of-financial-systems/">recognition of Decentralized Finance systems (DeFi)</a>,
+<a href="https://www.theguardian.com/technology/2021/mar/12/non-fungible-tokens-revolutionising-art-world-theft">rise of Non-Fungible Tokens (NFTs)</a>,
+and <a href="More%20Institutional%20Investors%20Jumping%20Into%20Bitcoin%20Leaves%20Less%20to%20Go%20Around,%20Data%20Shows">more institutional investors jumping in the cryptocurrency market</a>
+are some of the traits of the new cryptomania wave.</p>
+
+<p>In this post, I will try to adopt some of the applications
+of these technologies, with the eyes of a researcher and (when I have time <img class="emoji" title=":cry:" alt=":cry:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png" height="20" width="20">) a blogger.</p>
+
+<h2 id="blogpost-timestamping">Blogpost Timestamping</h2>
+
+<p>A known application of blockchain-based Distributed Ledger Technologies
+is <em>trusted digital timestamping</em> <d-cite key="Haber91howto">trusted digital timestamping</d-cite> [@Haber91howto].
+Previously, there were several timestamping schemes and standards <d-cite key="adams2001internet,ansi2016x9,ISOtimestamping,Massias99designof"></d-cite>,
+but they had to rely on a trusted third party Timestamping Authority (TSA)
+for the issuing of the timestamp.
+With the advent of the Bitcoin system, it is possible to
+use it as a decentralized 
+timestamping mechanism not only for transactions but also for arbitrary
+data, as if it acted as a <em>notary</em> <d-cite key="gipp2015decentralized"></d-cite>.</p>
+
+<p><a href="https://opentimestamps.org/">OpenTimestamps</a> is an 
+open-source project that implements this idea.
+In particular, it uses Bitcoin block headers as time attestations: 
+proof that a notary that we trust attested to the fact that some data existed at some point in time.</p>
+
+<p>For bloggers, a timestamp of their blogposts would be useful to prove that
+the post was not created after the date that the timestamper certifies.
+For example, this post is timestamped using OpenTimestamps.
+The timestamp is produced against the <a href="crypto-blogging.pdf">PDF version</a> of the post.
+The links to the PDF version and the timestamp file are reported in the header of the post.
+Anyone can verify the correctness of the timestamp either
+by using the CLI tool <a href="https://github.com/opentimestamps/opentimestamps-client#usage"><code class="language-plaintext highlighter-rouge">ots verify</code></a>, 
+or by relying on a third-party service like <a href="https://dgi.io/ots/">this</a>.
+I will try to keep this habit in the next posts.</p>
+
+<p>As a reseracher, one could also timestamp PDF versions of his publications;
+however, it is less necessary as the published papers are already disseminated 
+on the web by trustworthy (but centralized) aggregators, publishers, and search engines,
+e.g. Google Scholar, DBLP, ArXiv etc.</p>
+
+<h2 id="ipfs">IPFS</h2>
+
+<p>The <a href="https://ipfs.io/">InterPlanetary File System</a> (IPFS)
+is a peer-to-peer distributed file system that seeks to connect 
+all computing devices with the same system of files <d-cite key="benet2014ipfs"></d-cite>.
+It is arguably one of the most interesting project of the decentralized web.</p>
+
+<p>An entire website could be easily hosted
+on the IPFS network, like <a href="https://juan.benet.ai/">Juan Benet’s website</a>,
+the creator of IPFS. All is needed is to 
+either run a local IPFS node on your machine, or to rely on
+<a href="https://docs.ipfs.io/how-to/work-with-pinning-services/">remote pinning services</a>,
+like <a href="https://pinata.cloud/">Pinata</a>,
+to improve the availability of your files.
+At the moment, I have only uploaded some of my documents
+(see the IPFS links in <a href="/papers">publications page</a>),
+but eventually I will run the entire website on IPFS,
+so to not rely on any third-party services.</p>
+
+<h2 id="unstoppable-domains">Unstoppable Domains</h2>
+
+<p><a href="https://unstoppabledomains.com/">Unstoppable Domains</a>
+is a company building blockchain-based domains
+to replace cryptocurrency addresses with human-readable names.
+Being decentralized, such domains are inherently unstoppable
+(as long as the Ethereum blockchain and the transport
+layer it builds on are operational),
+and the sole owner is the owner of the private key 
+associated with the domain.
+The system works thanks to the Crypto Name Service (CNS)
+built on Ethereum, and consists of a bundle of smart contracts.
+See the <a href="https://docs.unstoppabledomains.com/domain-registry-essentials/architecture-overview">architecture documentation page</a>
+ for more details.</p>
+
+<p>I set up my Unstoppable Domain <a href="https://marcofavorito.crypto">marcofavorito.crypto</a>
+that currently redirects to <a href="https://marcofavorito.me">marcofavorito.me</a>
+(see transaction <a href="https://etherscan.io/tx/0x56b0b5bcd81785be6735b2b53341499dce0a005c2bd1e24a007c6d89244e7e6c#eventlog">here</a>), 
+hosted on GitHub Pages.
+I also have associated to it my <a href="https://etherscan.io/tx/0xe2356a5460382557e42f39413affa4da7a153879fb515ef0323873f02d822747/advanced#eventlog">email address</a>,
+and my <a href="https://etherscan.io/tx/0x138299fb55f425d3ccb7a4281f16d46b5f606eecb114299ab486ffb0ab9287f0#eventlog">BTC and ETH addresses</a>.</p>
+
+<p>An easy way to navigate in the decentralized web is by means of
+<a href="https://unstoppabledomains.com/extension">this browser extension</a>.
+If I had deployed the website on IPFS, I could have set up a redirection
+from my crypto-domain to the IPFS address of the website.</p>
+
+<h2 id="blogposts-as-nfts">Blogposts as NFTs</h2>
+
+<p>Non-Fungible Tokens (NFT),
+proposed in ERC-721 <d-cite key="entriken2018eip"></d-cite> 
+are tokens minted on blockchain that are unique.
+An NFT is not like any other one, differently
+from ERC-20 tokens, which are fungible.
+This makes them particularily apt to
+represent ownership of digital assets.
+NFTs are now used by crypto artists
+(e.g. see <a href="https://foreignpolicy.com/2021/03/19/nft-beeple-69-million-art-crypto-nonfungible-token/">artist Beeple’s <em>Everydays: the First 5000 Days</em> sold
+as NFT for $69m</a>), 
+blockchain games, and several other uses to ensure digital scarcity and ownership.
+The Unstoppable Domain above is indeed an NFT.
+Usually, an NFT is minted on-chain and the data linked to it is stored
+off-chain in a content-addressed data storage such as IPFS.</p>
+
+<p>This post is associated to <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/27798962552534080114972654858550532991370133186513724228847828029296905027585">this NFT</a>,
+that represents the ownership of this post.
+Who knows, it could be the next Beeple’s <em>Everydays</em>!</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>As a technology at its early stages,
+when it comes to applications of blockchain systems, the sky’s the limit. 
+In this post, I wanted to play with several crypto-based
+services and see how they could be used for blogging.</p>
+
+<p>Among other ideas not explored in this post, there are:</p>
+
+<ul>
+  <li>
+<a href="https://newsletter.banklesshq.com/p/how-to-tokenize-yourself-full">Tokenize yourself</a> as a professional/researcher/blogger.
+That is, make the token to represent something, material or immaterial, that you have or you can provide. For example,
+your working hours can be tokenized and then sold to people who’d like you to work for them, or to write the next blogpost <img class="emoji" title=":slightly_smiling_face:" alt=":slightly_smiling_face:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f642.png" height="20" width="20">.
+The token can be provided on DeFi exchanges like <a href="https://uniswap.org/">Uniswap</a>.</li>
+  <li>NFTs can be a way to <a href="https://www.seanblanda.com/nft-for-writers/">post anonymously</a> and still receive compensation for the work.</li>
+  <li>NFTs allow for <a href="https://dev.mirror.xyz/llJ_AboiDJwB_ZAFz-CXU7fL2p8v5Wz6MjfluLafewQ">crowfunding writing</a> in which 
+an author can be supported in advance by contributors that in turn receive equity ownership from the writer’s work;
+everything coordinated by a smart contract in a trustless setting.</li>
+</ul>
+
+
+      
+      <hr>
+      <!-- disqus comments -->
+      
+        <div id="disqus_thread"></div>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+var disqus_config = function () {
+this.page.url = document.location.href; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = document.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://marcofavorito-me.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>               
+
+      
+
+      </d-article>
+
+
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
+
+      <d-bibliography src="./crypto-blogging.bib">
+      </d-bibliography>
+    </div>
+  </main>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+  
+    
+      <span class="footer-icon">
+         <a href="mailto:marco.favorito@gmail.com"><img width="24" height="24" src="/assets/img/icons/envelope.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="mailto:favorito@diag.uniroma1.it"><img width="24" height="24" src="/assets/img/icons/envelope.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://t.me/marcofavorito"><img width="24" height="24" src="/assets/img/icons/telegram.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://discord.com/users/marcofavorito#4943"><img width="24" height="24" src="/assets/img/icons/discord.png"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://github.com/marcofavorito"><img width="24" height="24" src="/assets/img/icons/github.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://www.linkedin.com/in/marcofavorito/"><img width="24" height="24" src="/assets/img/icons/linkedin.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://keybase.io/marcofavorito/"><img width="24" height="24" src="/assets/img/icons/keybase.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://www.reddit.com/user/marcofavorito"><img width="24" height="24" src="/assets/img/icons/reddit.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://news.ycombinator.com/user?id=marcofavorito"><img width="24" height="24" src="/assets/img/icons/hn.png"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="/assets/public_pgp.txt"><img width="24" height="24" src="/assets/img/icons/pgp.png"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://scholar.google.it/citations?user=tJhhDGEAAAAJ"><img width="24" height="24" src="/assets/img/icons/scholar.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://dblp.uni-trier.de/pers/hd/f/Favorito:Marco"><img width="24" height="24" src="/assets/img/icons/dblp.png"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="bitcoin:BC1QSNTNEWWS350D6GT25WC4SXNZFEY55WSE7V0RGJ"><img width="24" height="24" src="/assets/img/icons/bitcoin.png"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href=""><img width="24" height="24" src="/assets/img/icons/zcash.png"></a>
+      </span>
+  
+    
+        
+    
+      <span class="footer-icon">
+         <a href="https://www.researchgate.net/profile/Marco-Favorito"><img width="24" height="24" src="/assets/img/icons/researchgate.png"></a>
+      </span>
+   
+
+<div style="display: inline; text-align: center" itemscope itemtype="https://schema.org/Person">
+  <a itemprop="sameAs" content="https://orcid.org/0000-0001-9566-3576" href="https://orcid.org/0000-0001-9566-3576" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;">
+      <img src="/assets/img/icons/orcid_bw.png" width="24" height="24" alt="ORCID iD icon"></a>
+</div>
+      <!-- https://orcid.org/0000-0001-9566-3576 -->
+
+</div>
+
+</footer>
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap//js/mdb.min.js" integrity="" crossorigin="anonymous"></script> -->
+
+
+  
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/assets/js/publications.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162936928-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162936928-1');
+  
+  gtag('config', 'G-VLMZ2VWC3N');
+  
+  gtag('config', 'G-DDYB9GX4XD');
+  
+  gtag('set', 'anonymizeIp', true);
+  gtag('send', 'pageview');
+</script>
+
+
+
+
+</html>
